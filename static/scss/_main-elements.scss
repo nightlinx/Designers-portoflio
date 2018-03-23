@@ -1,0 +1,82 @@
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  font-family: $raleway;
+}
+
+h3 {
+  color: $element-color-primary;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-align: center;
+  margin: 40px;
+}
+
+h4{
+  margin: 0px;
+  font-family: $roboto;
+}
+
+button {
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: $about-color-background;
+  padding: 8px 15px 7px 15px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &.primary {
+    color: $element-color-primary;
+    border: 2px solid $element-color-primary;
+
+    &:hover {
+      color: white;
+      background-color: $element-color-primary;
+    }
+  }
+
+  &.center {
+    vertical-align: middle;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: $p-text-size;
+  text-align: left;
+  color: $p-text-color;
+  font-weight: lighter;
+  letter-spacing: 0.1px;
+  line-height: 140%;
+}
+
+p.hidden {
+  font-size: 0;
+}
+
+
+@media only screen and (max-width: 350px){
+  nav.home{
+    a {
+      margin: 8px;
+    }
+  }
+  h1{
+    font-size: 95%;
+  }
+}
+
+.grid{
+  text-align: center;
+  background-color:  white;
+  color: $black-text-color;
+}

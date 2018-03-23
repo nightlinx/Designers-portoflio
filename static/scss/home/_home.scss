@@ -1,0 +1,66 @@
+@import "../_variables.scss";
+
+h1 {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 90px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  color: $about-color-text;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  span{
+    text-shadow: 1px 0 black;
+    font-weight:bold;
+  }
+}
+
+.box {
+  text-align: center;
+  min-width: 300px;
+  &.home {
+    background-color: $about-color-background;
+    padding: 30px 10px 100px 10px;
+  }
+}
+
+nav.home{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 70%;
+  display: inline-block;
+  a {
+    text-decoration: none;
+    margin: 16px;
+    color: $about-color-text;
+
+    &:hover {
+      color: $element-color-primary;
+    }
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background: #BDBDBD;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  nav.home{
+    a {
+      margin: 8px;
+    }
+  }
+  h1{
+    font-size: 95%;
+  }
+}

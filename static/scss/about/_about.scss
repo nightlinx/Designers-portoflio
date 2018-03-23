@@ -1,0 +1,59 @@
+@import "../_variables.scss";
+
+.grid{
+  text-align: center;
+  background-color:  white;
+  color: $black-text-color;
+}
+
+.about {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+     "header"
+     "avatar"
+     "text1"
+     "text2"
+}
+
+@media only screen and (min-width: 650px){
+  .about {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto 200px 200px 200px auto;
+    grid-template-areas:
+       "... header header header ..."
+       "... avatar text1 text1 ..."
+       "... ...    text2 text2 ..."
+  }
+  .avatar {
+    grid-area: avatar;
+    margin-top: 5px;
+  }
+}
+
+.who-i-am, .what-i-do {
+  text-align: left;
+}
+
+
+.who-i-am {
+  grid-area: text1;
+}
+
+.what-i-do {
+  grid-area: text2;
+  margin-top: 10px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.avatar {
+  grid-area: avatar;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 50%;
+}

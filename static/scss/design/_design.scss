@@ -1,0 +1,46 @@
+@import "../_variables.scss";
+
+.design {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+     "design1"
+     "design2"
+     "design3"
+}
+
+@media only screen and (min-width: 150px){
+  .design{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto 150px 150px 150px auto;
+    grid-template-areas:
+       "... design1 design2 design3 ..."
+  }
+}
+.image {
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.design1 {
+  grid-area: design1;
+}
+
+.design2 {
+  grid-area: design2;
+}
+
+.design3 {
+  grid-area: design3;
+}
+
+.implem1 {
+  grid-area: implem1;
+}
+.implem2 {
+  grid-area: implem2;
+}
+.implem3 {
+  grid-area: implem3;
+}
