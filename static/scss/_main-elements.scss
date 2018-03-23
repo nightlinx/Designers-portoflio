@@ -5,18 +5,53 @@ body {
   font-family: $raleway;
 }
 
+h1 {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 90px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  color: $about-color-text;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  span{
+    text-shadow: 1px 0 black;
+    font-weight:bold;
+  }
+}
+
 h3 {
   color: $element-color-primary;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: $h3-font-size;
   text-align: center;
-  margin: 40px;
+  margin: 60px 0 30px 0;
 }
 
 h4{
   margin: 0px;
   font-family: $roboto;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+h5 {
+  text-align: left;
+  margin: 0;
+  font-size: $h5-font-size;
+}
+
+#h3-about {
+  margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 button {
@@ -51,7 +86,7 @@ button {
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: $p-text-size;
+  font-size: $p-font-size;
   text-align: left;
   color: $p-text-color;
   font-weight: lighter;

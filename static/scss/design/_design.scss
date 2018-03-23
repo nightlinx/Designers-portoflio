@@ -1,6 +1,6 @@
 @import "../_variables.scss";
 
-.design {
+/*.design {
   display: grid;
   grid-gap: 5px;
   grid-template-areas:
@@ -8,20 +8,59 @@
      "design2"
      "design3"
 }
+*/
 
-@media only screen and (min-width: 150px){
+
+@media only screen and (min-width: 550px){
   .design{
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: auto 150px 150px 150px auto;
+    grid-template-columns: auto 250px 250px 250px auto;
     grid-template-areas:
        "... design1 design2 design3 ..."
   }
 }
-.image {
-  margin-top: 5px;
-  display: inline-block;
+
+@media only screen and (min-width: 550px){
+  .implem{
+    display: grid;
+    grid-template-columns: auto 250px 250px 250px auto;
+    grid-template-areas:
+       "... implem1 implem2 implem3 ..."
+  }
 }
+
+.image {
+  width: 220px;
+  height: 160px;
+}
+
+.design1, .design2, .design3{
+  width: 220px;
+  height: 160px;
+  box-shadow: 0 2px 6px 0 #EBEBEB;
+  margin: 0 10px;
+  margin-top: 0;
+}
+
+.implem1, .implem2, .implem3{
+  width: 220px;
+  box-shadow: 0 2px 6px 0 #EBEBEB;
+  margin: 0 10px;
+  margin-top: 0;
+}
+
+.design1, .design2, .design3, {
+  margin-bottom: 20px;
+}
+
+.descr1, .descr2, .descr3 {
+  padding: 10px 12px;
+  box-sizing: border-box;
+  width: 220px;
+  height: auto;
+  font-size: $descr-font-size;
+}
+
 
 .design1 {
   grid-area: design1;
@@ -38,9 +77,23 @@
 .implem1 {
   grid-area: implem1;
 }
+
 .implem2 {
   grid-area: implem2;
 }
+
 .implem3 {
   grid-area: implem3;
+}
+
+.descr1 {
+  grid-area: descr1;
+}
+
+.descr2 {
+  grid-area: descr2;
+}
+
+.descr3 {
+  grid-area: descr3;
 }
