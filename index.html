@@ -58,29 +58,29 @@
 		<div id="design"><p class="hidden">design</p>
 			<h3 class="header uppercase">my recent design</h3>
 			<div class="grid design">
+
+				<!-- The Modal-->
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+
 				<div class="design1">
-						<img id="myImg" src="static/img/gallery.png" class="image"></img>
-
-						<!-- The Modal-->
-						<div id="myModal" class="modal">
-							<span class="close">&times;</span>
-							<img class="modal-content" id="img01">
-							<div id="caption"></div>
-						</div>
-
+						<img src="static/img/gallery.png" class="image" onclick="zoomImg(0)"></img>
 				</div>
 				<div class="design2">
-						<img src="static/img/mobile.jpg" class="image"></img>
+						<img src="static/img/mobile.jpg" class="image" onclick="zoomImg(1)"></img>
 				</div>
 				<div class="design3">
-						<img src="static/img/lapka.jpg" class="image"></img>
+						<img src="static/img/lapka.jpg" class="image" onclick="zoomImg(2)"></img>
 				</div>
 			</div>
 
 			<h3 class="header uppercase">...with implementation</h3>
 			<div class="grid implem">
 				<div class="implem1">
-						<img src="static/img/chess.png" class="image"></img>
+						<img src="static/img/chess.png" class="image" onclick="zoomImg(3)"></img>
 						<div class="descr1">
 							<h5>MasterChess</h5>
 							<p>
@@ -92,7 +92,7 @@
 				</div>
 
 				<div class="implem2">
-						<img src="static/img/bonanza.jpg" class="image"></img>
+						<img src="static/img/bonanza.jpg" class="image" onclick="zoomImg(4)"></img>
 						<div class="descr2">
 							<h5>Bonanza</h5>
 							<p>
@@ -104,7 +104,7 @@
 				</div>
 
 				<div class="implem3">
-						<img src="static/img/hospital.jpg" class="image"></img>
+						<img src="static/img/hospital.jpg" class="image" onclick="zoomImg(5)"></img>
 						<div class="descr3">
 							<h5>Strona Kliniki</h5>
 							<p>
@@ -152,10 +152,30 @@
     //   el: '#content',
     //   data: {},
     //   });
+		function zoomImg(n){
+			var modal = document.getElementById('myModal');
+			var img = document.getElementsByClassName("image")[n];
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+					modal.style.display = "none";
+			}
+		}
+		/*
+
 
 		// Get the modal
 		var modal = document.getElementById('myModal');
-
 		// Get the image and insert it inside the modal - use its "alt" text as a caption
 		var img = document.getElementById('myImg');
 		var modalImg = document.getElementById("img01");
@@ -172,7 +192,8 @@
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
 		    modal.style.display = "none";
-		}
+
+		}		*/
   </script>
 </body>
 </html>
