@@ -30,6 +30,7 @@ h3 {
 
 h4 {
   margin: 0px;
+  margin-top: 5px;
   font-family: "Roboto", sans-serif;
   text-align: left;
   font-weight: bold; }
@@ -42,6 +43,9 @@ h5 {
 #h3-about {
   margin-bottom: 40px;
   margin-top: 60px; }
+
+a {
+  color: #1eaebe; }
 
 div.button a {
   text-decoration: none;
@@ -77,6 +81,9 @@ p.hidden {
 
 p.larger {
   font-size: 12px; }
+  p.larger span.bold {
+    font-weight: bold;
+    letter-spacing: 0.25px; }
 
 @media only screen and (max-width: 350px) {
   nav.home a {
@@ -115,8 +122,8 @@ p.larger {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  max-height: 80%;
+  max-height: 700px;
   margin-bottom: 10px; }
 
 /* Caption of Modal Image */
@@ -212,8 +219,8 @@ nav.home {
   .about {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: auto 200px 200px 200px auto;
-    grid-template-areas: "... header header header ..." "... avatar text1 text1 ..." "... ...    text2 text2 ..."; }
+    grid-template-columns: auto 190px 190px 190px auto;
+    grid-template-areas: "... header header header ..." "... avatar text1 text1 ..." "... ...    text1 text1 ..."; }
 
   .avatar {
     grid-area: avatar;
@@ -287,14 +294,14 @@ nav.home {
 
   .implem1, .implem2, .implem3 {
     width: 220px;
-    margin: 0 10px;
     margin-top: 0; } }
 .design1, .design2, .design3 {
   box-shadow: 0 2px 6px 0 #EBEBEB;
   margin: 10px; }
 
 .implem1, .implem2, .implem3 {
-  box-shadow: 0 2px 6px 0 #EBEBEB; }
+  box-shadow: 0 2px 6px 0 #EBEBEB;
+  margin: 0 10px; }
 
 .descr1, .descr2, .descr3 {
   padding: 10px 12px;

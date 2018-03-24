@@ -37,6 +37,7 @@ h3 {
 
 h4{
   margin: 0px;
+  margin-top: 5px;
   font-family: $roboto;
   text-align: left;
   font-weight: bold;
@@ -54,6 +55,9 @@ h5 {
   margin-top: 60px;
 }
 
+a {
+  color: $element-color-primary;
+}
 
 div.button {
   a{
@@ -99,7 +103,13 @@ p.hidden {
 
 p.larger {
   font-size: $p-font-size-larger;
+
+  span.bold {
+    font-weight: bold;
+    letter-spacing: 0.25px;
+  }
 }
+
 
 
 @media only screen and (max-width: 350px){
@@ -138,8 +148,8 @@ p.larger {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    max-height: 80%;
+    max-height: 700px;
     margin-bottom: 10px;
 }
 
