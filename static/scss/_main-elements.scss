@@ -124,7 +124,7 @@ p.larger {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 50px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -140,6 +140,7 @@ p.larger {
     display: block;
     width: 80%;
     max-width: 700px;
+    margin-bottom: 10px;
 }
 
 /* Caption of Modal Image */
@@ -193,9 +194,5 @@ p.larger {
 @media only screen and (max-width: 500px){
     .modal-content {
         width: 100%;
-    }
-
-    .close {
-    right: 10px;
     }
 }

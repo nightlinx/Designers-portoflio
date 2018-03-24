@@ -96,7 +96,7 @@ p.larger {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 50px;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -116,7 +116,8 @@ p.larger {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px; }
+  max-width: 700px;
+  margin-bottom: 10px; }
 
 /* Caption of Modal Image */
 #caption {
@@ -163,10 +164,7 @@ p.larger {
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 500px) {
   .modal-content {
-    width: 100%; }
-
-  .close {
-    right: 10px; } }
+    width: 100%; } }
 .box {
   text-align: center;
   min-width: 300px; }
@@ -293,7 +291,7 @@ nav.home {
     margin-top: 0; } }
 .design1, .design2, .design3 {
   box-shadow: 0 2px 6px 0 #EBEBEB;
-  margin: 10px 0; }
+  margin: 10px; }
 
 .implem1, .implem2, .implem3 {
   box-shadow: 0 2px 6px 0 #EBEBEB; }

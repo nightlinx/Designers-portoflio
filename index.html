@@ -62,18 +62,20 @@
 				<!-- The Modal-->
 				<div id="myModal" class="modal">
 					<span class="close">&times;</span>
-					<img class="modal-content" id="img01">
+					<!-- <img class="modal-content" id="img01">
+					<img class="modal-content" id="img02">
+					<img class="modal-content" id="img03"> -->
 					<div id="caption"></div>
 				</div>
 
 				<div class="design1">
-						<img src="static/img/gallery.png" class="image" onclick="zoomImg(0)"></img>
+						<img src="static/img/gallery.png" class="image" onclick="zoomImg(1, 1)" alt="gallery"></img>
 				</div>
 				<div class="design2">
-						<img src="static/img/mobile.jpg" class="image" onclick="zoomImg(1)"></img>
+						<img src="static/img/mobile.jpg" class="image" onclick="zoomImg(2, 3)"></img>
 				</div>
 				<div class="design3">
-						<img src="static/img/lapka.jpg" class="image" onclick="zoomImg(2)"></img>
+						<img src="static/img/lapka.jpg" class="image" onclick="zoomImg(3)"></img>
 				</div>
 			</div>
 
@@ -152,16 +154,45 @@
     //   el: '#content',
     //   data: {},
     //   });
-		function zoomImg(n){
+		function zoomImg(n, m){ //n = name, m = number of images
 			var modal = document.getElementById('myModal');
-			var img = document.getElementsByClassName("image")[n];
-			var modalImg = document.getElementById("img01");
 			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
+
+	//		var imgElement = document.createElement("span");
+	//		imgElement.innerHTML = '<img class="modal-content" id="' + 'img0' + i + '">';
+	//		modal.appendChild(imgElement);
+
+			while (modal.firstChild) {
+			  modal.removeChild(modal.firstChild);
 			}
+
+			var spanElement = document.createElement("span");
+			spanElement.innerHTML = '<span class="close">&times;</span>';
+			modal.appendChild(spanElement);
+
+			var modalsImg = [];
+			var srcs = [];
+
+			for (i=1; i<(m+1); i++){
+
+				var imgElement = document.createElement("span");
+				imgElement.innerHTML = '<img class="modal-content" id="' + 'img0' + i + '">';
+				modal.appendChild(imgElement);
+
+				id = "img0"+i;
+				console.log(id);
+				modalsImg.push(document.getElementById(id));
+				srcs.push('static/img/' + n + '/' + i + '.jpg');
+				console.log(modalsImg[i] + ' | ' + srcs[i]);
+				modalsImg[i-1].src = srcs[i-1];
+			}
+
+			var divElement = document.createElement("span");
+			divElement.innerHTML = '<div id="caption"></div>';
+			modal.appendChild(divElement);
+
+			modal.style.display = "block";
+			captionText.innerHTML = this.alt;
 
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
@@ -171,29 +202,6 @@
 					modal.style.display = "none";
 			}
 		}
-		/*
-
-
-		// Get the modal
-		var modal = document.getElementById('myModal');
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById('myImg');
-		var modalImg = document.getElementById("img01");
-		var captionText = document.getElementById("caption");
-		img.onclick = function(){
-		    modal.style.display = "block";
-		    modalImg.src = this.src;
-		    captionText.innerHTML = this.alt;
-		}
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		    modal.style.display = "none";
-
-		}		*/
   </script>
 </body>
 </html>
