@@ -129,25 +129,25 @@
 				<h3 class="header uppercase">ux process</h3>
 				<div class="grid ux">
 					<div class="ux1">
-							<img src="static/icons/ux1.png" class="icon"></img>
+							<img src="static/icons/ux1.png" class="icon" onclick="chooseIcon(1)"></img>
 					</div>
 					<div class="ux2">
-							<img src="static/icons/ux2.png" class="icon"></img>
+							<img src="static/icons/ux2.png" class="icon" onclick="chooseIcon(2)"></img>
 					</div>
 					<div class="ux3">
-							<img src="static/icons/ux3.png" class="icon"></img>
+							<img src="static/icons/ux3.png" class="icon" onclick="chooseIcon(3)"></img>
 					</div>
-					<div class="ux-content">
-						<img src="static/img/bonanza.jpg" class="view"></img>
+					<div id="viewImgContent"class="ux-content">
+							<img class="view" src="static/img/ux/1.png">
 					</div>
 					<div class="ux4">
-							<img src="static/icons/ux4.png" class="icon"></img>
+							<img src="static/icons/ux4.png" class="icon" onclick="chooseIcon(4)"></img>
 					</div>
 					<div class="ux5">
-							<img src="static/icons/ux5.png" class="icon"></img>
+							<img src="static/icons/ux5.png" class="icon" onclick="chooseIcon(5)"></img>
 					</div>
 					<div class="ux6">
-							<img src="static/icons/ux6.png" class="icon"></img>
+							<img src="static/icons/ux6.png" class="icon" onclick="chooseIcon(6)"></img>
 					</div>
 				</div>
 
@@ -161,6 +161,19 @@
     //   el: '#content',
     //   data: {},
     //   });
+		function chooseIcon(n){
+			var view = document.getElementById('viewImgContent');
+
+			while (view.firstChild) {
+			  view.removeChild(view.firstChild);
+			}
+
+			var spanElement = document.createElement("span");
+			spanElement.innerHTML = '<img class="view" src="static/img/ux/' + n + '.png">';
+			view.appendChild(spanElement);
+		}
+
+
 		function zoomImg(n, m){ //n = name, m = number of images
 			var modal = document.getElementById('myModal');
 			var captionText = document.getElementById("caption");
