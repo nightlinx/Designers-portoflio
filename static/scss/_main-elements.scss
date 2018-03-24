@@ -32,7 +32,7 @@ h3 {
   letter-spacing: 1px;
   font-size: $h3-font-size;
   text-align: center;
-  margin: 60px 0 30px 0;
+  margin: 50px 0 30px 0;
 }
 
 h4{
@@ -51,7 +51,7 @@ h5 {
 
 #h3-about {
   margin-bottom: 40px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 button {
@@ -96,6 +96,10 @@ p {
 
 p.hidden {
   font-size: 0;
+}
+
+p.larger {
+  font-size: $p-font-size-larger;
 }
 
 
