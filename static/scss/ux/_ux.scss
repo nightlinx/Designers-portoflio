@@ -53,6 +53,10 @@
   box-shadow: 0 2px 6px 0 #EBEBEB;
 }
 
+img.arrow {
+  grid-area: arrow;
+  width: 20px;
+}
 
 .ux-content {
   grid-area: content;

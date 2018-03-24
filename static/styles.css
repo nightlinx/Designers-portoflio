@@ -43,7 +43,7 @@ h5 {
   margin-bottom: 40px;
   margin-top: 60px; }
 
-button {
+div.button a {
   text-decoration: none;
   border-radius: 5px;
   font-size: 12px;
@@ -53,14 +53,12 @@ button {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   cursor: pointer; }
-  button.primary {
+  div.button a.primary {
     color: #1eaebe;
     border: 2px solid #1eaebe; }
-    button.primary:hover {
+    div.button a.primary:hover {
       color: white;
       background-color: #1eaebe; }
-  button.center {
-    vertical-align: middle; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -286,6 +284,10 @@ nav.home {
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0 2px 6px 0 #EBEBEB; }
+
+img.arrow {
+  grid-area: arrow;
+  width: 20px; }
 
 .ux-content {
   grid-area: content;

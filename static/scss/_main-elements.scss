@@ -54,29 +54,28 @@ h5 {
   margin-top: 60px;
 }
 
-button {
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: $about-color-background;
-  padding: 8px 15px 7px 15px;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 1px;
-  cursor: pointer;
 
-  &.primary {
-    color: $element-color-primary;
-    border: 2px solid $element-color-primary;
+div.button {
+  a{
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: $about-color-background;
+    padding: 8px 15px 7px 15px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
 
-    &:hover {
-      color: white;
-      background-color: $element-color-primary;
+    &.primary {
+      color: $element-color-primary;
+      border: 2px solid $element-color-primary;
+
+      &:hover {
+        color: white;
+        background-color: $element-color-primary;
+      }
     }
-  }
-
-  &.center {
-    vertical-align: middle;
   }
 }
 
