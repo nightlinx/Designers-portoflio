@@ -41,6 +41,7 @@ h4{
   font-family: $roboto;
   text-align: left;
   font-weight: bold;
+  font-size: $h4-font-size;
 }
 
 
@@ -101,8 +102,8 @@ p.hidden {
   font-size: 0;
 }
 
-p.larger {
-  font-size: $p-font-size-larger;
+p.medium {
+  font-size: $p-font-size-medium;
 
   span.bold {
     font-weight: bold;
@@ -110,7 +111,14 @@ p.larger {
   }
 }
 
-
+@media only screen and (min-width: 1200px){
+  p.medium {
+    font-size: $p-font-size-large;
+  }
+  h4 {
+    font-size: $h4-font-size-large;
+  }
+}
 
 @media only screen and (max-width: 350px){
   nav.home{

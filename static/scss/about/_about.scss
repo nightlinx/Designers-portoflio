@@ -34,6 +34,13 @@
   }
 }
 
+@media only screen and (min-width: 1200px){
+  .about {
+    grid-template-columns: auto 220px 220px 220px auto;
+  }
+
+}
+
 .who-i-am, .what-i-do {
   text-align: left;
 }

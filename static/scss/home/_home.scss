@@ -13,7 +13,7 @@ nav.home{
   letter-spacing: 0.25px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 70%;
+  font-size: $nav-font-size;
   display: inline-block;
   a {
     text-decoration: none;
