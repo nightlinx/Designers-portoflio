@@ -27,9 +27,16 @@ nav.home{
   hr {
     border: 0;
     height: 1px;
-    background: #BDBDBD;
+    background: $element-color-sec;
     margin-top: 20px;
   }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: $element-color-sec;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 380px){

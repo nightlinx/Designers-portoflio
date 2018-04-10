@@ -21,7 +21,7 @@ h2 {
     font-weight: bold; }
 
 h3 {
-  color: #1eaebe;
+  color: #608a42;
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 16px;
@@ -45,25 +45,46 @@ h5 {
   margin-bottom: 40px;
   margin-top: 60px; }
 
+footer {
+  background-color: #f2f3f2;
+  margin-top: 50px;
+  padding: 15px 0 0 0; }
+  footer p {
+    font-size: 16px; }
+    footer p a {
+      font-size: 14px; }
+  footer p, footer a {
+    font-style: "Roboto", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px; }
+  footer div {
+    background-color: #608a42; }
+    footer div #sign {
+      color: white;
+      margin: 15px 0 0 0;
+      padding: 12px;
+      font-size: 14px; }
+
 a {
-  color: #1eaebe; }
+  color: #608a42; }
 
 div.button a {
   text-decoration: none;
   border-radius: 5px;
   font-size: 12px;
   font-weight: bold;
-  background-color: #EBEBEB;
+  background-color: #f2f3f2;
   padding: 8px 15px 7px 15px;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   cursor: pointer; }
   div.button a.primary {
-    color: #1eaebe;
-    border: 2px solid #1eaebe; }
+    color: #608a42;
+    border: 2px solid #608a42; }
     div.button a.primary:hover {
       color: white;
-      background-color: #1eaebe; }
+      background-color: #608a42; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -171,7 +192,7 @@ p.medium {
   font-weight: bold;
   transition: 0.3s; }
   .close:hover, .close:focus {
-    color: #1eaebe;
+    color: #608a42;
     text-decoration: none;
     cursor: pointer; }
 
@@ -186,7 +207,7 @@ p.medium {
   text-align: center;
   min-width: 300px; }
   .box.home {
-    background-color: #EBEBEB;
+    background-color: #f2f3f2;
     padding: 30px 10px 100px 10px; }
 
 nav.home {
@@ -201,12 +222,18 @@ nav.home {
     margin: 16px;
     color: #333333; }
     nav.home a:hover {
-      color: #1eaebe; }
+      color: #608a42; }
   nav.home hr {
     border: 0;
     height: 1px;
-    background: #BDBDBD;
+    background: #bed590;
     margin-top: 20px; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #bed590;
+  margin-top: 20px; }
 
 @media only screen and (max-width: 380px) {
   nav.home a {

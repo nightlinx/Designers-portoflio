@@ -56,6 +56,35 @@ h5 {
   margin-top: 60px;
 }
 
+footer {
+  background-color: $about-color-background;
+  margin-top: 50px;
+  padding: 15px 0 0 0;
+  p {
+    font-size: $h4-font-size;
+    a {
+      font-size: $p-font-size-large;
+    }
+  }
+  p, a {
+      font-style: $roboto;
+      text-align: center;
+      vertical-align: middle;
+      margin: 5px;
+  }
+
+  div {
+    background-color: $element-color-primary;
+    #sign {
+      color: white;
+      margin: 15px 0 0 0;
+      padding: 12px;
+      font-size: $p-font-size-large;
+    }
+  }
+}
+
+
 a {
   color: $element-color-primary;
 }
