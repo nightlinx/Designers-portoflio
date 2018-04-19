@@ -27,17 +27,16 @@
 nav.home{
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.25px;
-  text-align: center;
   text-transform: uppercase;
   font-size: $nav-font-size;
   display: inline-block;
   a {
     text-decoration: none;
     margin: 16px;
-    color: $about-color-text;
+    color: $element-color-primary;
 
     &:hover {
-      color: $element-color-primary;
+      color: white;
     }
   }
   hr {
