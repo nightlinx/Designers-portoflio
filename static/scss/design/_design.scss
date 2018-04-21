@@ -1,6 +1,6 @@
 @import "../_variables.scss";
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 850px){
 
   .grid.design{
     text-align: center;
@@ -42,30 +42,30 @@
 
 }
 
-@media only screen and (min-width: 770px){
+@media only screen and (min-width: 850px){
   .design{
     display: grid;
-    grid-template-columns: auto 270px 270px 270px auto;
+    grid-template-columns: auto 280px 280px 280px auto;
     grid-template-areas:
        "... design1 design2 design3 ..."
   }
 
   .implem{
     display: grid;
-    grid-template-columns: auto 270px 270px 270px auto;
+    grid-template-columns: auto 280px 280px 280px auto;
     grid-template-areas:
        "... implem1 implem2 implem3 ..."
   }
 
   .image {
-    width: 240px;
-    height: 180px;
+    width: 250px;
+    height: 190px;
     cursor: pointer;
   }
 
   .design1, .design2, .design3{
-    width: 240px;
-    height: 180px;
+    width: 250px;
+    height: 190px;
     margin: 10px;
     margin-bottom: 20px;
   }
@@ -75,7 +75,7 @@
   }
 
   .implem1, .implem2, .implem3{
-    width: 240px;
+    width: 250px;
     margin-top: 0;
     margin-left: 10px;
   }

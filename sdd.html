@@ -24,12 +24,50 @@
 
 		<div class="articles">
 			<section class="chapter">
-				<h3>WSTĘP</h3>
+				<h3>WIZJA SYSTEMU</h3>
 				<p class="medium section">
-					I am a Computer Science student interested in design.
-					I have always had fun in drawing, sketching and hand-making.
-					Aside from this I really enjoy reading psychology articles and books.
-				</p>
+					Moim zadaniem było zaprojektowanie systemu, który zautomatyzowałby wszystkie czynności w procesie dypomowania, które były wcześniej wykonywane ręcznie.</p>
+					<ol class="medium" type="a">
+					  <li>Zebrałam informacje dotyczące całego procesu dyplomowania na uczelni</li>
+					  <li>Odkryłam problemy wynikające z obecnego systemu</li>
+					  <li>Zebrałam wymagania użytkowników</li>
+						<li>Spisałam pomysły rozwiązań problemów</li>
+						<li>Opisałam przyszłe cechy elektronicznego systemu wynikające z potrzeb użytkowników, które rozwiazałyby problemy w obecnym systemie</li>
+					</ol>
+					<p class="medium section">Analiza obecnego rozwiązania oraz rozmowy z przyszłymi użytkownikami pozwoliły odkryć problemy - dzięki zebranym informacjom zaproponowałam rozwiązanie w projektowanym systemie:</p>
+					<p class="medium section"><span class="red">PROBLEM</span>: Znalezienie wolnego tematu. <br> <span class="green">ROZWIĄZANIE</span>: Dostępna wiedza z listą wolnych tematów.</p>
+					<p class="medium section"><span class="red">PROBLEM</span>: Informacja o zmianie tematów. <br> <span class="green">ROZWIĄZANIE</span>: Dostępna akutalna wiedza, który student realizuje jaki temat.</p>
+					<p class="medium section"><span class="red">PROBLEM</span>: Brak informacji o tym, czy promotor osiąga limit dyplomantów. <br> <span class="green">ROZWIĄZANIE</span>: Dostępna informacja o liczbie wolnych godzin/dyplomantów. Powiadomienie o osiągnięciu limitu.</p>
+					<p class="medium section"><span class="red">PROBLEM</span>: Wybór recenzenta. <br> <span class="green">ROZWIĄZANIE</span>: Dostępna wiedza o tym ile recenzent ma przypisanych prac, wiedza o stopniach naukowych recenzentów.</p>
+			</section>
+			<section class="chapter">
+				<h3>SPECYFIKACJA WYMAGAŃ</h3>
+					<p class="medium section">Posiadając wymagania użytkowników mogłam zdefiniować je w formie historyjek oraz diagramu przypadków użycia.</p>
+					<img class="diagram" src="static/img/sdd/sdd-useCase.png"></img>
+					<p class="medium section">Następnie zdefiniowałam diagram domenowy, który wstępnie przedstawi strukturę klas w tworzonym systemie.</p>
+					<img class="diagram" src="static/img/sdd/sdd-classDiagram.png"></img>
+					<p> </p>
+			</section>
+			<section class="chapter">
+				<h3>SPECYFIKACJA PRZYPADKÓW UŻYCIA</h3>
+				<p class="medium section">Poprzez obszerność projektowanego systemu zdecydowałam się zautomatyzować procesy, które zwiazane są z <b>propozycjami tematów</b></p>
+					<ul class="medium">
+					  <li>Zatwierdzanie propozycji tematów</li>
+					  <li>Zarządzanie zaakceptowanymi propozycjami tematów</li>
+					 </ul>
+					 <p class="medium section">Użytkownikiem zaprojektowanej części systemu będzie promotor.</p>
+					 <p class="medium section">Dla wybranych przypadków użycia napisałam scenariusze korzystania z systemu wraz z wątkami alternatywnymi.<p>
+					<p class="medium section">W kolejnym kroku zbudowałam diagram klas.<p>
+					<img class="diagram" src="static/img/sdd/sdd-domainDiagram.png"></img>
+					<!-- <img class="diagram" src="static/img/sdd/sdd-useCase.png"></img> -->
+			</section>
+			<section class="chapter">
+				<h3>PROTOTYP INTERFEJSU</h3>
+				<img class="diagram" src="static/img/7/4.png"></img>
+				<img class="diagram" src="static/img/7/5.png"></img>
+				<p class="medium section">Po zbudowaniu interfejsów dodałam interakcję i przechodzenie między widokami.</p>
+				<img class="diagram" src="static/img/sdd/sdd-siteMap.png"></img>
+					<!-- <img class="diagram" src="static/img/sdd/sdd-useCase.png"></img> -->
 			</section>
 		</div>
 

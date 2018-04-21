@@ -131,7 +131,7 @@ div.button {
   text-transform: uppercase;
 }
 
-p {
+p, ol, ul{
   font-family: 'Roboto', sans-serif;
   font-size: $p-font-size-medium;
   text-align: left;
@@ -145,7 +145,7 @@ p.hidden {
   font-size: 0;
 }
 
-p.medium {
+p.medium, ol.medium, ul.medium {
   font-size: $p-font-size-medium;
 
   span.bold {
@@ -155,7 +155,7 @@ p.medium {
 }
 
 @media only screen and (min-width: 1200px){
-  p.medium {
+  p.medium, ol.medium, ul.medium {
     font-size: $p-font-size-large;
   }
   h4 {
