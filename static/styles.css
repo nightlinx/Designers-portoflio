@@ -19,7 +19,6 @@ h2 {
   margin-top: 0;
   margin-bottom: 20px; }
   h2 span {
-    text-shadow: 1px 0 black;
     font-weight: 700; }
 
 h3 {
@@ -46,11 +45,14 @@ h5 {
   text-align: left;
   margin: 0;
   font-size: 20px;
-  font-family: sans-serif, "Lucida Grande"; }
+  font-family: "Open Sans", sans-serif; }
 
 #h3-about {
   margin-bottom: 40px;
   margin-top: 60px; }
+
+.some-link:hover {
+  color: #FF8A8A; }
 
 a {
   color: #608a42; }
@@ -61,7 +63,7 @@ div.button a {
   font-size: 16px;
   font-weight: bold;
   background-color: #f2f3f2;
-  padding: 7px 14px 7px 14px;
+  padding: 7px 20px 7px 20px;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
   cursor: pointer; }
@@ -78,7 +80,10 @@ div.button a {
     background-color: #a5bd4d; }
     div.button a.secondary:hover {
       color: white;
-      background-color: #bed590; }
+      background-color: #FF8A8A; }
+
+.pink {
+  color: #E27373; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -107,8 +112,10 @@ footer {
     font-size: 22px; }
     footer p a {
       font-size: 20px; }
+      footer p a:hover {
+        color: #FF8A8A; }
   footer p, footer a {
-    font-style: "Lora", serif;
+    font-family: "Open Sans", sans-serif;
     text-align: center;
     vertical-align: middle;
     margin: 5px; }
@@ -220,17 +227,35 @@ footer {
 #introduction {
   background-color: #f2f3f2;
   margin-top: 0;
-  padding: 30px;
-  padding-bottom: 100px;
-  width: auto; }
+  padding: 40px;
+  padding-bottom: 110px;
+  width: auto;
+  background-image: url("icons/green1.png"), url("icons/green2.png");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom; }
   #introduction h1 {
     margin-top: 65px; }
   #introduction div {
     padding: 0;
     margin-top: 0; }
 
+@media only screen and (min-width: 1800px) {
+  #introduction {
+    padding: 70px;
+    padding-bottom: 140px;
+    background-size: 300px; } }
+@media only screen and (max-width: 870px) {
+  #introduction {
+    background-size: 140px, 180px; } }
+@media only screen and (max-width: 580px) {
+  #introduction {
+    background-image: url("icons/green2-white.png"), url("icons/green1-white.png");
+    background-size: 180px, 180px; }
+
+  h1 {
+    color: black; } }
 nav.home {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.25px;
   text-transform: uppercase;
   font-size: 14px;
@@ -274,7 +299,7 @@ hr {
   .about {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: auto 20px 240px 240px auto;
+    grid-template-columns: auto 240px 240px 240px auto;
     grid-template-areas: "... header header header ..." "... avatar text1 text1 ..." "... ...    text1 text1 ..."; }
 
   .avatar {

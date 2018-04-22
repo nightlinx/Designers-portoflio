@@ -11,9 +11,12 @@
 #introduction {
   background-color: $about-color-background;
   margin-top: 0;
-  padding: 30px;
-  padding-bottom: 100px;
+  padding: 40px;
+  padding-bottom: 110px;
   width: auto;
+  background-image: url("icons/green1.png"), url("icons/green2.png");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
   h1 {
     margin-top: 65px;
   }
@@ -23,9 +26,32 @@
   }
 }
 
+@media only screen and (min-width: 1800px){
+  #introduction {
+    padding: 70px;
+    padding-bottom: 140px;
+    background-size: 300px;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  #introduction {
+    background-size: 140px, 180px;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  #introduction {
+      background-image: url("icons/green2-white.png"), url("icons/green1-white.png");
+      background-size: 180px, 180px;
+  }
+  h1 {
+    color: black;
+  }
+}
 
 nav.home{
-  font-family: $lato;
+  font-family: $h-font-family;
   letter-spacing: 0.25px;
   text-transform: uppercase;
   font-size: $nav-font-size;
