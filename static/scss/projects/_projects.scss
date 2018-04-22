@@ -6,10 +6,12 @@
 
 span.red {
   color: hsl(6, 94%, 39%);
+  font-family: $h-font-family;
 }
 
 span.green {
   color: $element-color-primary;
+  font-family: $h-font-family;
 }
 
 .portfolio {
@@ -33,6 +35,12 @@ span.green {
 
 }
 
+h4.proj-header{
+  margin: 50px 10px -10px 10px;
+  color: $p-text-color;
+  font-size: 28px;
+}
+
 .project-info {
   background-color: $about-color-background;
 
@@ -53,7 +61,7 @@ img.diagram {
   border-radius: 10px;
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 20px 0 20px 10px;
 
   &.small {
     width: 70%;

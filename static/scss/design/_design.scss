@@ -1,6 +1,6 @@
 @import "../_variables.scss";
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 950px){
 
   .grid.design{
     text-align: center;
@@ -8,7 +8,7 @@
 
   .design {
     display: grid;
-    grid-template-columns: auto 300px auto;
+    grid-template-columns: auto 400px auto;
     grid-template-areas:
        "... design1 ..."
        "... design2 ..."
@@ -17,7 +17,7 @@
 
   .implem {
     display: grid;
-    grid-template-columns: auto 300px auto;
+    grid-template-columns: auto 400px auto;
     grid-template-areas:
     "... implem1 ..."
     "... implem2 ..."
@@ -25,7 +25,7 @@
   }
 
   .design1, .design2, .design3, .image, .implem1, .implem2, .implem3, .descr1, .descr2, .descr3 {
-    width: 300px;
+    width: 400px;
   }
 
   .implem1, .implem2, .implem3 {
@@ -42,40 +42,41 @@
 
 }
 
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 950px){
   .design{
     display: grid;
-    grid-template-columns: auto 280px 280px 280px auto;
+    grid-template-columns: auto 310px 310px 310px auto;
     grid-template-areas:
        "... design1 design2 design3 ..."
   }
 
   .implem{
     display: grid;
-    grid-template-columns: auto 280px 280px 280px auto;
+    grid-template-columns: auto 310px 310px 310px auto;
+    margin-bottom: 50px;
     grid-template-areas:
        "... implem1 implem2 implem3 ..."
   }
 
   .image {
-    width: 250px;
-    height: 190px;
+    width: 280px;
+    height: 210px;
     cursor: pointer;
   }
 
   .design1, .design2, .design3{
-    width: 250px;
-    height: 190px;
+    width: 280px;
+    height: 210px;
     margin: 10px;
     margin-bottom: 20px;
   }
 
   .descr1, .descr2, .descr3 {
-    width: 240px;
+    width: 280px;
   }
 
   .implem1, .implem2, .implem3{
-    width: 250px;
+    width: 280px;
     margin-top: 0;
     margin-left: 10px;
   }

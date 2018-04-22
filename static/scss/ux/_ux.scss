@@ -1,7 +1,7 @@
 @import "../_variables.scss";
 
 
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 800px){
 
   .ux {
     display: grid;
@@ -14,8 +14,8 @@
   }
 
   .icon {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: 10px;
   }
 
@@ -24,10 +24,10 @@
   }
 }
 
-@media only screen and (min-width: 580px){
+@media only screen and (min-width: 800px){
   .ux {
     display: grid;
-    grid-template-columns: auto 200px 200px 200px auto;
+    grid-template-columns: auto 250px 250px 250px auto;
     grid-template-areas:
        "... ux1 ux2 ux3 ..."
        "... content content content ..."
@@ -35,12 +35,12 @@
   }
 
   .icon {
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
   }
 
   .view{
-    width: 550px;
+    width: 700px;
     height: 400px;
     margin: 20px 0;
   }

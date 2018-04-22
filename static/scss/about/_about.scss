@@ -18,11 +18,11 @@
      "text2"
 }
 
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 790px){
   .about {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: auto 230px 230px 230px auto;
+    grid-template-columns: auto 20px 240px 240px auto;
     grid-template-areas:
        "... header header header ..."
        "... avatar text1 text1 ..."
@@ -34,9 +34,9 @@
   }
 }
 
-@media only screen and (min-width: 1300px){
+@media only screen and (min-width: 1200px){
   .about {
-    grid-template-columns: auto 260px 260px 260px auto;
+    grid-template-columns: auto 290px 290px 290px auto;
   }
 
 }
