@@ -26,7 +26,7 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   margin: 50px 0 30px 0;
   margin-bottom: 50px; }
@@ -36,7 +36,7 @@ h4 {
   margin-top: 5px;
   margin-bottom: -13px;
   text-align: left;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 90%;
   font-family: "Open Sans", sans-serif;
   font-weight: 600; }
@@ -60,7 +60,7 @@ a {
 div.button a {
   text-decoration: none;
   border-radius: 18px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   background-color: #f2f3f2;
   padding: 7px 20px 7px 20px;
@@ -74,7 +74,7 @@ div.button a {
       color: white;
       background-color: #608a42; }
   div.button a.secondary {
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 30px;
     color: white;
     background-color: #a5bd4d; }
@@ -91,7 +91,7 @@ div.button a {
 p, ol, ul {
   font-family: "Lora", serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   color: #444;
   line-height: 140%; }
@@ -100,7 +100,7 @@ p.hidden {
   font-size: 0; }
 
 p.medium, ol.medium, ul.medium {
-  font-size: 16px; }
+  font-size: 14px; }
   p.medium span.bold, ol.medium span.bold, ul.medium span.bold {
     font-weight: bold; }
 
@@ -109,9 +109,9 @@ footer {
   margin-top: 50px;
   padding: 15px 0 0 0; }
   footer p {
-    font-size: 22px; }
+    font-size: 20px; }
     footer p a {
-      font-size: 20px; }
+      font-size: 16px; }
       footer p a:hover {
         color: #FF8A8A; }
   footer p, footer a {
@@ -125,14 +125,14 @@ footer {
       color: white;
       margin: 15px 0 0 0;
       padding: 12px;
-      font-size: 20px; }
+      font-size: 16px; }
 
 @media only screen and (min-width: 1200px) {
   p.medium, ol.medium, ul.medium {
-    font-size: 20px; }
+    font-size: 16px; }
 
   h4 {
-    font-size: 26px; } }
+    font-size: 24px; } }
 .grid {
   text-align: center;
   background-color: white;
@@ -307,7 +307,7 @@ hr {
     margin-top: 5px; } }
 @media only screen and (min-width: 1200px) {
   .about {
-    grid-template-columns: auto 290px 290px 290px auto; } }
+    grid-template-columns: auto 270px 270px 270px auto; } }
 .who-i-am, .what-i-do {
   text-align: left; }
 
@@ -357,28 +357,28 @@ hr {
 @media only screen and (min-width: 950px) {
   .design {
     display: grid;
-    grid-template-columns: auto 310px 310px 310px auto;
+    grid-template-columns: auto 290px 290px 290px auto;
     grid-template-areas: "... design1 design2 design3 ..."; }
 
   .implem {
     display: grid;
-    grid-template-columns: auto 310px 310px 310px auto;
+    grid-template-columns: auto 290px 290px 290px auto;
     margin-bottom: 50px;
     grid-template-areas: "... implem1 implem2 implem3 ..."; }
 
   .image {
-    width: 280px;
-    height: 210px;
+    width: 260px;
+    height: 190px;
     cursor: pointer; }
 
   .design1, .design2, .design3 {
-    width: 280px;
-    height: 210px;
+    width: 260px;
+    height: 230px;
     margin: 10px;
     margin-bottom: 20px; }
 
   .descr1, .descr2, .descr3 {
-    width: 280px; }
+    width: 260px; }
 
   .implem1, .implem2, .implem3 {
     width: 280px;
@@ -439,16 +439,16 @@ hr {
 @media only screen and (min-width: 800px) {
   .ux {
     display: grid;
-    grid-template-columns: auto 250px 250px 250px auto;
+    grid-template-columns: auto 230px 230px 230px auto;
     grid-template-areas: "... ux1 ux2 ux3 ..." "... content content content ..." "... ux4 ux5 ux6 ..."; }
 
   .icon {
-    width: 200px;
-    height: 200px; }
+    width: 180px;
+    height: 180px; }
 
   .view {
-    width: 700px;
-    height: 400px;
+    width: 630px;
+    height: 350px;
     margin: 20px 0; } }
 .view {
   box-shadow: 0 2px 6px 0 #EBEBEB; }
@@ -517,14 +517,18 @@ h4.proj-header {
   font-size: 28px; }
 
 .project-info {
-  background-color: #f2f3f2; }
+  background-color: #f2f3f2;
+  background-image: url("icons/green2.png"), url("icons/green2-left.png");
+  background-repeat: no-repeat;
+  background-position: right bottom, left bottom;
+  background-size: 150px, 150px; }
   .project-info #project {
     text-align: center;
     padding-bottom: 60px; }
 
 .medium.section {
   padding: 0 10px;
-  font-size: 20px; }
+  font-size: 16px; }
 
 img.diagram {
   border-radius: 10px;

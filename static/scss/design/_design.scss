@@ -45,34 +45,34 @@
 @media only screen and (min-width: 950px){
   .design{
     display: grid;
-    grid-template-columns: auto 310px 310px 310px auto;
+    grid-template-columns: auto 290px 290px 290px auto;
     grid-template-areas:
        "... design1 design2 design3 ..."
   }
 
   .implem{
     display: grid;
-    grid-template-columns: auto 310px 310px 310px auto;
+    grid-template-columns: auto 290px 290px 290px auto;
     margin-bottom: 50px;
     grid-template-areas:
        "... implem1 implem2 implem3 ..."
   }
 
   .image {
-    width: 280px;
-    height: 210px;
+    width: 260px;
+    height: 190px;
     cursor: pointer;
   }
 
   .design1, .design2, .design3{
-    width: 280px;
-    height: 210px;
+    width: 260px;
+    height: 230px;
     margin: 10px;
     margin-bottom: 20px;
   }
 
   .descr1, .descr2, .descr3 {
-    width: 280px;
+    width: 260px;
   }
 
   .implem1, .implem2, .implem3{

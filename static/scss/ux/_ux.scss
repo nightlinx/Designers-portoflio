@@ -27,7 +27,7 @@
 @media only screen and (min-width: 800px){
   .ux {
     display: grid;
-    grid-template-columns: auto 250px 250px 250px auto;
+    grid-template-columns: auto 230px 230px 230px auto;
     grid-template-areas:
        "... ux1 ux2 ux3 ..."
        "... content content content ..."
@@ -35,13 +35,13 @@
   }
 
   .icon {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .view{
-    width: 700px;
-    height: 400px;
+    width: 630px;
+    height: 350px;
     margin: 20px 0;
   }
 
