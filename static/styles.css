@@ -109,16 +109,13 @@ footer {
   margin-top: 50px;
   padding: 15px 0 0 0; }
   footer p {
+    margin-bottom: 35px;
     font-size: 20px; }
-    footer p a {
-      font-size: 16px; }
       footer p a:hover {
         color: #FF8A8A; }
   footer p, footer a {
     font-family: "Open Sans", sans-serif;
-    text-align: center;
-    vertical-align: middle;
-    margin: 5px; }
+    text-align: center;}
   footer div {
     background-color: #608a42; }
     footer div #sign {

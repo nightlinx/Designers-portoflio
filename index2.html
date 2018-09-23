@@ -16,60 +16,61 @@
   <div class="wrapper">
 		<div class="box home">
 			<nav class="home">
-				<a href="#about">O mnie</a>
-				<a href="#design">ostatnie projekty</a>
-				<a href="#uxprocess">mój proces ux</a>
-				<a href="#contact">kontakt</a>
+				<a href="#about">about</a>
+				<a href="#design">design</a>
+				<a href="#uxprocess">ux</a>
+				<a href="#uxprocess">work</a>
+				<a href="#contact">contact</a>
 				<hr>
 			</nav>
 			<div id="introduction">
-				<h1>Cześć, mam na imię Ania i jestem</h1>
-				<h2>UX & UI <span class="bold uppercase">designerką</span></h2>
-				<div class="button"><a href="#design" class="button primary center uppercase">zobacz moje prace</a></div>
+				<h1>Hello, my name is Anna, and I am a</h1>
+				<h2>UX & UI <span class="bold uppercase">designer</span></h2>
+				<div class="button"><a href="#design" class="button primary center uppercase">see my work</a></div>
 			</div>
 		</div>
 
 		<div id="about"><p class="hidden">about</p>
-			<h3 id="h3-about" class="header uppercase pink">o mnie</h3>
+			<h3 id="h3-about" class="header uppercase">about</h3>
 			<div class="grid about">
 				<img src="static/icons/avatar2.png" class="avatar"></img>
 				<div class="who-i-am">
-					<h4>Kim jestem?</h4>
+					<h4>Who am I?</h4>
 					<p class="medium">
-						Jestem studentką informatyki interesującą się web designem.</br>
-						Od zawsze uwielbiałam szkicować, malować i tworzyć piękne rzeczy.
-						Oprócz tego chętnie poszerzam swoją wiedzę z psychologii.
+						I am a Computer Science student interested in design.
+						I have always had fun in drawing, sketching and hand-making.
+						Aside from this I really enjoy reading and learning about psychology.
 					</p>
 					<p class="medium">
-						<span class="bold">UX & UI design</span> łączy wszystko to co kocham &ndash; dlatego tutaj jestem!
+						<span class="bold">UX & UI design</span> joins all the things that I love &ndash; that's why I am here!
 						<br><br>
 					</p>
-					<h4>Jak pracuję?</h4>
+					<h4>How I work?</h4>
 					<p class="medium">
-						Większość prototypów wykonuję w moim ulubionym narzędziu do projektowania interfejsów &ndash; Figmie.
-						Teraz uczę się Axure.
-						Kiedy tworzę projekt dla całego systemu przechodzę przez cały <a class="some-link" href="#uxprocess"> proces UX.</a>
-
+						Most of my prototypes and designs I am making in my favourite interface design tool &ndash; Figma.
+						Now I am learning Axure.
+						When I am creating design for the whole system I am going through <a class="some-link" href="#uxprocess">UX process.</a>
 					</p>
 						<p class="medium">
-						W większości projektów pracuję w zespole &ndash; nie tylko jako designerka.
-						Często zajmuję się także projektowaniem oprogramowania:
-						tworzę schematy baz danych, specyfikuję wymagania użytkowników, projektuję diagramy UML czy piszę scenariusze przypadków użycia.
+						In most of projects I work in team &ndash; not only as an UI designer.
+						I have also experience in software design:
+						creating data base schemas, gathering user requirements,
+						designing UML diagrams, writing use case scenarios and testing usability.
 						<br><br>
 					</p>
-					<h4>Czy umiem programować?</h4>
+					<h4>Can I code?</h4>
 					<p class="medium">
-						Pewnie, że umiem! Mam doświadczenie w implementacjach przeróżnych aplikacji webowych.
-						Przez krótki czas pracowałam także jako front-end developerka.
-						Swobodnie poruszam się w HTMLu, CSSie, Java Scripcie, teraz uczę się SASSa i Vue.js &ndash;
-						czyli wszystko co potrzebuję, by ożywić moje projekty!
+						Yes, I can. I have experience with developing web applications.
+						For the short period of time I was working as a front-end developer.
+						I've learnt HTML, CSS, JS and now I am learning SASS and Vue.js &ndash;
+						all essential stuff that can make my sites real!
 					</p>
 				</div>
 			</div>
 		</div>
-		<!-- <div id="design"><p class="hidden">design</p>
+		<div id="design"><p class="hidden">design</p>
 			<h3 class="header uppercase pink" style="color: #E27373;">My skills</h3>
-			<div class="grid design">
+			<!-- <div class="grid design">
 
 				<div id="myModal" class="modal">
 					<span class="close">&times;</span>
@@ -87,7 +88,7 @@
 				</div>
 			</div> -->
 
-		<h3 class="header uppercase">ostatnie projekty</h3>
+		<h3 class="header uppercase">MY RECENT DESIGN</h3>
 		<div id="myModal" class="modal">
 			<span class="close">&times;</span>
 			<div id="caption"></div>
@@ -139,7 +140,7 @@
 
 		</div>
 		<div id="uxprocess"><p class="hidden">ux</p>
-				<h3 class="header uppercase pink">mój proces ux</h3>
+				<h3 class="header uppercase">ux process</h3>
 				<div class="grid ux">
 					<div class="ux1">
 							<img src="static/icons/1.png" class="icon" onclick="chooseIcon(1)"></img>
@@ -166,18 +167,20 @@
 
 		</div>
 
-			</div>
-
-
   </div>
   <footer class="footer" id="contact">
-		<p>Podobają Ci się moje prace? Napisz do mnie maila, albo znajdź mnie na <a href="https://www.linkedin.com/in/anna-skalecka/" target="_blank">LinkedIn</a>!</p>
+		<p>You can find me on</p>
+		<p><a href="https://www.linkedin.com/in/anna-skalecka/" target="_blank">LinkedIn</a></p>
 		<div>
-			<p id="sign">&copy 2018 Anna Janik | janik.anna@interia.com</p>
+			<p id="sign">&copy 2018 Anna Skałecka</p>
 		</div>
 	</footer>
 </div>
   <script>
+    // new Vue({
+    //   el: '#content',
+    //   data: {},
+    //   });
 		function chooseIcon(n){
 			var view = document.getElementById('viewImgContent');
 
