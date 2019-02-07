@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Lora", serif; }
+  font-family: "Lato", serif; }
 
 h1 {
   font-size: 20px;
@@ -9,7 +9,7 @@ h1 {
   margin-bottom: 8px;
   letter-spacing: 0.5px;
   color: #333333;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 h2 {
   font-family: "Lato", sans-serif;
@@ -23,10 +23,10 @@ h2 {
 
 h3 {
   color: #608a42;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-family: "Lato", sans-serif;
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 28px;
+  font-weight: 400;
   text-align: center;
   margin: 50px 0 30px 0;
   margin-bottom: 50px; }
@@ -34,18 +34,17 @@ h3 {
 h4 {
   margin: 0px;
   margin-top: 5px;
-  margin-bottom: -13px;
+  margin-bottom: -5px;
   text-align: left;
-  font-size: 20px;
-  letter-spacing: 90%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600; }
+  font-size: 26px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
 
 h5 {
   text-align: left;
   margin: 0;
   font-size: 20px;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 #h3-about {
   margin-bottom: 40px;
@@ -64,7 +63,7 @@ div.button a {
   font-weight: bold;
   background-color: #f2f3f2;
   padding: 7px 20px 7px 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   cursor: pointer; }
   div.button a.primary {
@@ -89,8 +88,8 @@ div.button a {
   text-transform: uppercase; }
 
 p, ol, ul {
-  font-family: "Lora", serif;
-  font-weight: 400;
+  font-family: "Lato", serif;
+  font-weight: 300;
   font-size: 14px;
   text-align: left;
   color: #444;
@@ -109,13 +108,16 @@ footer {
   margin-top: 50px;
   padding: 15px 0 0 0; }
   footer p {
-    margin-bottom: 35px;
-    font-size: 20px; }
+    font-size: 24px; }
+    footer p a {
+      font-size: 16px; }
       footer p a:hover {
         color: #FF8A8A; }
   footer p, footer a {
-    font-family: "Open Sans", sans-serif;
-    text-align: center;}
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px; }
   footer div {
     background-color: #608a42; }
     footer div #sign {
@@ -129,7 +131,7 @@ footer {
     font-size: 16px; }
 
   h4 {
-    font-size: 24px; } }
+    font-size: 26px; } }
 .grid {
   text-align: center;
   background-color: white;
@@ -252,7 +254,7 @@ footer {
   h1 {
     color: black; } }
 nav.home {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   letter-spacing: 0.25px;
   text-transform: uppercase;
   font-size: 14px;
@@ -370,9 +372,10 @@ hr {
 
   .design1, .design2, .design3 {
     width: 260px;
-    height: 230px;
     margin: 10px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding: 7px;
+    padding-bottom: 5px; }
 
   .descr1, .descr2, .descr3 {
     width: 260px; }
@@ -486,11 +489,11 @@ img.arrow {
 
 span.red {
   color: #c11906;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 span.green {
   color: #608a42;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 .portfolio {
   background-color: #bed590;
