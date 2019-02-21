@@ -30,7 +30,7 @@ h2 {
 h3 {
   color: $element-color-primary;
   font-family: $h-font-family;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   font-size: $h3-font-size-large;
   font-weight: $h-font-wight;
   text-align: center;
@@ -61,6 +61,10 @@ h5 {
   margin-top: 60px;
 }
 
+section.chapter {
+  max-width: 740px;
+}
+
 .some-link {
   &:hover{
     color: $element-color-other;
@@ -78,7 +82,7 @@ div.button {
     font-size: $p-font-size-medium;
     font-weight: bold;
     background-color: $about-color-background;
-    padding: 7px 20px 7px 20px;
+    padding: 10px 25px;
     font-family: $h-font-family;
     letter-spacing: 2px;
     cursor: pointer;
@@ -121,7 +125,7 @@ p, ol, ul{
   font-size: $p-font-size-medium;
   text-align: left;
   color: $p-text-color;
-  line-height: 140%;
+  line-height: 150%;
 }
 
 p.hidden {

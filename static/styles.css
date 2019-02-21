@@ -24,9 +24,9 @@ h2 {
 h3 {
   color: #608a42;
   font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
-  font-size: 28px;
-  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 24px;
+  font-weight: 700;
   text-align: center;
   margin: 50px 0 30px 0;
   margin-bottom: 50px; }
@@ -38,7 +38,7 @@ h4 {
   text-align: left;
   font-size: 26px;
   font-family: "Lato", sans-serif;
-  font-weight: 400; }
+  font-weight: 700; }
 
 h5 {
   text-align: left;
@@ -50,6 +50,9 @@ h5 {
   margin-bottom: 40px;
   margin-top: 60px; }
 
+section.chapter {
+  max-width: 740px; }
+
 .some-link:hover {
   color: #FF8A8A; }
 
@@ -59,10 +62,10 @@ a {
 div.button a {
   text-decoration: none;
   border-radius: 18px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   background-color: #f2f3f2;
-  padding: 7px 20px 7px 20px;
+  padding: 10px 25px;
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   cursor: pointer; }
@@ -73,7 +76,7 @@ div.button a {
       color: white;
       background-color: #608a42; }
   div.button a.secondary {
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 30px;
     color: white;
     background-color: #a5bd4d; }
@@ -90,16 +93,16 @@ div.button a {
 p, ol, ul {
   font-family: "Lato", serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   color: #444;
-  line-height: 140%; }
+  line-height: 150%; }
 
 p.hidden {
   font-size: 0; }
 
 p.medium, ol.medium, ul.medium {
-  font-size: 14px; }
+  font-size: 16px; }
   p.medium span.bold, ol.medium span.bold, ul.medium span.bold {
     font-weight: bold; }
 
@@ -110,7 +113,7 @@ footer {
   footer p {
     font-size: 24px; }
     footer p a {
-      font-size: 16px; }
+      font-size: 18px; }
       footer p a:hover {
         color: #FF8A8A; }
   footer p, footer a {
@@ -124,11 +127,11 @@ footer {
       color: white;
       margin: 15px 0 0 0;
       padding: 12px;
-      font-size: 16px; }
+      font-size: 18px; }
 
 @media only screen and (min-width: 1200px) {
   p.medium, ol.medium, ul.medium {
-    font-size: 16px; }
+    font-size: 18px; }
 
   h4 {
     font-size: 26px; } }
@@ -235,8 +238,8 @@ footer {
   #introduction h1 {
     margin-top: 65px; }
   #introduction div {
-    padding: 0;
-    margin-top: 0; }
+    padding: 20px;
+    margin-top: 10px; }
 
 @media only screen and (min-width: 1800px) {
   #introduction {
@@ -298,7 +301,7 @@ hr {
   .about {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: auto 240px 240px 240px auto;
+    grid-template-columns: auto 250px 250px 250px auto;
     grid-template-areas: "... header header header ..." "... avatar text1 text1 ..." "... ...    text1 text1 ..."; }
 
   .avatar {
@@ -306,7 +309,7 @@ hr {
     margin-top: 5px; } }
 @media only screen and (min-width: 1200px) {
   .about {
-    grid-template-columns: auto 270px 270px 270px auto; } }
+    grid-template-columns: auto 300px 300px 300px auto; } }
 .who-i-am, .what-i-do {
   text-align: left; }
 
@@ -512,7 +515,7 @@ span.green {
       color: white; }
 
 h4.proj-header {
-  margin: 50px 10px -10px 10px;
+  margin: 50px 10px -5px 10px;
   color: #444;
   font-size: 28px; }
 
@@ -528,7 +531,7 @@ h4.proj-header {
 
 .medium.section {
   padding: 0 10px;
-  font-size: 16px; }
+  font-size: 18px; }
 
 img.diagram {
   border-radius: 10px;
