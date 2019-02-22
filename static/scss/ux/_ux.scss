@@ -1,21 +1,25 @@
 @import "../_variables.scss";
 
-
+.ux{
+  margin-bottom:50px;
+}
 @media only screen and (max-width: 800px){
-
   .ux {
     display: grid;
     padding: 10px;
-    grid-template-columns: auto 33% 33% 33% auto;
+    grid-template-columns: auto 33% 65% auto;
     grid-template-areas:
-       "... ux1 ux2 ux3 ..."
-       "... content content content ..."
-       "... ux4 ux5 ux6 ..."
+    "... ux1 content1 ..."
+    "... ux2 content2 ..."
+    "... ux3 content3 ..."
+    "... ux4 content4 ..."
+    "... ux5 content5 ..."
+    "... ux6 content6 ..."
   }
 
   .icon {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     margin: 10px;
   }
 
@@ -27,23 +31,21 @@
 @media only screen and (min-width: 800px){
   .ux {
     display: grid;
-    grid-template-columns: auto 230px 230px 230px auto;
+    grid-template-columns: auto 280px 590px auto;
     grid-template-areas:
-       "... ux1 ux2 ux3 ..."
-       "... content content content ..."
-       "... ux4 ux5 ux6 ..."
+    "... ux1 content1 ..."
+    "... ux2 content2 ..."
+    "... ux3 content3 ..."
+    "... ux4 content4 ..."
+    "... ux5 content5 ..."
+    "... ux6 content6 ..."
   }
 
   .icon {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
 
-  .view{
-    width: 630px;
-    height: 350px;
-    margin: 20px 0;
-  }
 
 }
 
@@ -62,10 +64,29 @@ img.arrow {
   width: 20px;
 }
 
-.ux-content {
-  grid-area: content;
-  margin: 10px;
+.ux1-content, .ux2-content,  .ux3-content,  .ux4-content,  .ux5-content,  .ux6-content{
+  height: 160px;
 }
+
+ .ux1-content {
+   grid-area: content1;
+ }
+
+ .ux2-content {
+   grid-area: content2;
+ }
+ .ux3-content {
+   grid-area: content3;
+ }
+ .ux4-content {
+   grid-area: content4;
+ }
+ .ux5-content {
+   grid-area: content5;
+ }
+ .ux6-content {
+   grid-area: content6;
+ }
 
 .ux1{
   grid-area: ux1;

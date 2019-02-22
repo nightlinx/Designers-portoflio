@@ -148,6 +148,9 @@ p.medium, ol.medium, ul.medium {
   }
 }
 
+p.large {
+  font-size: $p-font-size-large;
+}
 
 footer {
   background-repeat: no-repeat;
@@ -155,7 +158,7 @@ footer {
   background-position: top;
   background-color: #2e7344;
   padding: 15px 0 0 0;
-  background-image: url("img/leaves3.jpg");
+  //background-image: url("img/leaves3.jpg");
   background-repeat: no-repeat;
   background-size:cover;
   p {
