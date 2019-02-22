@@ -6,8 +6,8 @@ body {
 h1 {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 8px;
-  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
   color: white;
   font-family: "Lato", sans-serif;
   text-shadow: 0 0 10px black; }
@@ -113,27 +113,33 @@ p.medium, ol.medium, ul.medium {
     font-weight: bold; }
 
 footer {
-  background-color: #f2f3f2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: #2e7344;
   margin-top: 50px;
   padding: 15px 0 0 0; }
   footer p {
-    font-size: 24px; }
+    font-size: 20px;
+    color: white; }
     footer p a {
-      font-size: 18px; }
+      color: white;
+      padding-bottom: 5px; }
       footer p a:hover {
-        color: #FF8A8A; }
+        color: black; }
   footer p, footer a {
     font-family: "Lato", sans-serif;
     text-align: center;
     vertical-align: middle;
     margin: 5px; }
   footer div {
-    background-color: #608a42; }
+    background-color: rgba(0, 0, 0, 0.5); }
     footer div #sign {
       color: white;
       margin: 15px 0 0 0;
       padding: 12px;
-      font-size: 18px; }
+      font-size: 18px;
+      font-weight: 400; }
 
 @media only screen and (min-width: 1200px) {
   p.medium, ol.medium, ul.medium {
