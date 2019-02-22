@@ -47,16 +47,16 @@ nav.home{
     background: rgba(255, 255, 255, 1);
     padding: 0;
     margin-bottom: 157px;
+    text-align: right;
     a {
-      margin:auto;
       text-decoration: none;
-      margin: 16px;
+      margin: 30px 40px;
       color: $p-text-color;
       &:hover {
         color: #559d86;
       }
     }
-    a:nth-child(1){
+    a#me{
       text-transform: uppercase;
       letter-spacing: 3px;
       float:left;

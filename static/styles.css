@@ -25,7 +25,7 @@ h2 {
     font-weight: 700; }
 
 h3 {
-  color: #559d86;
+  color: #3d745e;
   font-family: "Lato", sans-serif;
   letter-spacing: 4px;
   font-size: 24px;
@@ -60,7 +60,7 @@ section.chapter {
   color: #FF8A8A; }
 
 a {
-  color: #559d86; }
+  color: #3d745e; }
 
 div.button a {
   text-decoration: none;
@@ -222,7 +222,7 @@ footer {
   font-weight: bold;
   transition: 0.3s; }
   .close:hover, .close:focus {
-    color: #559d86;
+    color: #3d745e;
     text-decoration: none;
     cursor: pointer; }
 
@@ -270,21 +270,21 @@ nav.home {
     width: auto;
     background: white;
     padding: 0;
-    margin-bottom: 157px; }
+    margin-bottom: 157px;
+    text-align: right; }
     nav.home div.top-links a {
-      margin: auto;
       text-decoration: none;
-      margin: 16px;
+      margin: 30px 40px;
       color: #444; }
       nav.home div.top-links a:hover {
         color: #559d86; }
-    nav.home div.top-links a:nth-child(1) {
+    nav.home div.top-links a#me {
       text-transform: uppercase;
       letter-spacing: 3px;
       float: left;
       margin: auto;
       font-size: 19px; }
-      nav.home div.top-links a:nth-child(1) span {
+      nav.home div.top-links a#me span {
         font-weight: 700;
         font-size: 18px; }
   nav.home hr {
@@ -517,7 +517,7 @@ span.red {
   font-family: "Lato", sans-serif; }
 
 span.green {
-  color: #559d86;
+  color: #3d745e;
   font-family: "Lato", sans-serif; }
 
 .powrot {
