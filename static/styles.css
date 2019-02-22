@@ -1,23 +1,26 @@
 body {
   margin: 0;
-  font-family: "Lato", serif; }
+  font-family: "Lato", serif;
+  width: 100%; }
 
 h1 {
   font-size: 20px;
-  font-weight: lighter;
-  margin-top: 90px;
+  font-weight: 400;
   margin-bottom: 8px;
   letter-spacing: 0.5px;
-  color: #333333;
-  font-family: "Lato", sans-serif; }
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-shadow: 0 0 10px black; }
 
 h2 {
   font-family: "Lato", sans-serif;
+  color: white;
   font-size: 48px;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
   margin-top: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px black; }
   h2 span {
     font-weight: 700; }
 
@@ -64,17 +67,20 @@ div.button a {
   border-radius: 18px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #f2f3f2;
-  padding: 10px 25px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 15px 35px;
   font-family: "Lato", sans-serif;
-  letter-spacing: 2px;
-  cursor: pointer; }
-  div.button a.primary {
-    color: #608a42;
-    border: 3px solid #608a42; }
-    div.button a.primary:hover {
-      color: white;
-      background-color: #608a42; }
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px black;
+  box-shadow: 0 0 15px black; }
+  div.button a.primary:hover {
+    box-shadow: none;
+    transition: 0.2s;
+    background-color: #6eb356;
+    text-shadow: none; }
   div.button a.secondary {
     font-size: 16px;
     padding: 5px 30px;
@@ -223,56 +229,64 @@ footer {
   text-align: center;
   min-width: 300px; }
   .box.home {
-    background-color: #bed590;
-    padding: 25px 0 0 0; }
+    background-color: transparent; }
 
 #introduction {
-  background-color: #f2f3f2;
+  background-color: transparent;
   margin-top: 0;
-  padding: 40px;
-  padding-bottom: 110px;
   width: auto;
-  background-image: url("icons/green1.png"), url("icons/green2.png");
+  background-image: url("img/leaves3.jpg");
   background-repeat: no-repeat;
-  background-position: left top, right bottom; }
+  background-size: cover;
+  background-position: top; }
   #introduction h1 {
     margin-top: 65px; }
   #introduction div {
-    padding: 20px;
-    margin-top: 10px; }
+    padding: 30px; }
 
-@media only screen and (min-width: 1800px) {
-  #introduction {
-    padding: 70px;
-    padding-bottom: 140px;
-    background-size: 300px; } }
-@media only screen and (max-width: 870px) {
-  #introduction {
-    background-size: 140px, 180px; } }
-@media only screen and (max-width: 580px) {
-  #introduction {
-    background-image: url("icons/green2-white.png"), url("icons/green1-white.png");
-    background-size: 180px, 180px; }
-
-  h1 {
-    color: black; } }
 nav.home {
   font-family: "Lato", sans-serif;
   letter-spacing: 0.25px;
-  text-transform: uppercase;
-  font-size: 14px;
-  display: inline-block; }
-  nav.home a {
-    text-decoration: none;
-    margin: 16px;
-    color: #608a42; }
-    nav.home a:hover {
-      color: white; }
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  transition: 0.5s; }
+  nav.home:hover {
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s; }
+  nav.home div.top-links {
+    margin: 0;
+    width: auto;
+    background: white;
+    padding: 0;
+    margin-bottom: 157px; }
+    nav.home div.top-links a {
+      margin: auto;
+      text-decoration: none;
+      margin: 16px;
+      color: #444; }
+      nav.home div.top-links a:hover {
+        color: #559d86; }
+    nav.home div.top-links a:nth-child(1) {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      float: left;
+      margin: auto;
+      font-size: 19px; }
+      nav.home div.top-links a:nth-child(1) span {
+        font-weight: 700;
+        font-size: 18px; }
   nav.home hr {
     border: 0;
     height: 1px;
     background: #bed590;
     margin-top: 20px; }
+
+nav.home > div:nth-child(4) {
+  margin-bottom: 170px; }
 
 hr {
   border: 0;
@@ -506,7 +520,7 @@ span.green {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.25px;
   text-transform: uppercase;
-  font-size: 14px; }
+  font-size: 18px; }
   .portfolio a {
     text-decoration: none;
     margin: 16px;

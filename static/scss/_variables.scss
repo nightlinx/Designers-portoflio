@@ -8,13 +8,15 @@ $element-color-other: #FF8A8A;
 
 $about-color-background: #EBEBEB;
 $about-color-background: hsl(95, 5%, 95%);
-$about-color-text: #333333;
+$about-color-text: white;
 
 $black-text-color: #444;
 $p-text-color: #444;
 
+$button-color: rgb(110,179,86);
+
 //czcionki
-$nav-font-size: 14px;
+$nav-font-size: 18px;
 $nav-font-size-large: 24px;
 $p-font-size: 13px;
 $p-font-size-medium: 16px;
@@ -35,5 +37,6 @@ $lucida: sans-serif, "Lucida Grande";
 
 $p-font-family: 'Lato', serif;
 $p-font-wight: 300;
+$p-font-wight-regular: 400;
 $h-font-family: 'Lato', sans-serif;
 $h-font-wight: 700;

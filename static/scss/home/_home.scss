@@ -3,68 +3,69 @@
   text-align: center;
   min-width: 300px;
   &.home {
-    background-color: $element-color-sec;
-    padding: 25px 0 0 0;
+    background-color: transparent;
+    //padding: 25px 0 0 0;
   }
 }
 
 #introduction {
-  background-color: $about-color-background;
+  background-color: transparent;
   margin-top: 0;
-  padding: 40px;
-  padding-bottom: 110px;
   width: auto;
-  background-image: url("icons/green1.png"), url("icons/green2.png");
-  //background-image: url("img/gory.jpg");
+  //background-image: url("icons/green1.png"), url("icons/green2.png");
+  background-image: url("img/leaves3.jpg");
   background-repeat: no-repeat;
-  background-position: left top, right bottom;
+  background-size:cover;
+  background-position: top;
   h1 {
     margin-top: 65px;
   }
   div {
-    padding: 20px;
-    margin-top: 10px;
+    padding: 30px;
   }
-}
-
-@media only screen and (min-width: 1800px){
-  #introduction {
-    padding: 70px;
-    padding-bottom: 140px;
-    background-size: 300px;
-  }
-}
-
-@media only screen and (max-width: 870px){
-  #introduction {
-    background-size: 140px, 180px;
-  }
-}
-
-@media only screen and (max-width: 580px){
-  #introduction {
-      //background-image: url("img/gory.jpg");
-      background-image: url("icons/green2-white.png"), url("icons/green1-white.png");
-      background-size: 180px, 180px;
-  }
-  h1 {
-    color: black;
+  &:hover {
   }
 }
 
 nav.home{
   font-family: $h-font-family;
   letter-spacing: 0.25px;
-  text-transform: uppercase;
   font-size: $nav-font-size;
   display: inline-block;
-  a {
-    text-decoration: none;
-    margin: 16px;
-    color: $element-color-primary;
-
-    &:hover {
-      color: white;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+  font-weight: $p-font-wight-regular;
+  transition: 0.5s;
+  &:hover {
+    background-color: rgba(255,255,255,0);
+    transition: 0.5s;
+  }
+  div.top-links{
+    margin: 0;
+    width: auto;
+    background: rgba(255, 255, 255, 1);
+    padding: 0;
+    margin-bottom: 157px;
+    a {
+      margin:auto;
+      text-decoration: none;
+      margin: 16px;
+      color: $p-text-color;
+      &:hover {
+        color: #559d86;
+      }
+    }
+    a:nth-child(1){
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      float:left;
+      margin:auto;
+      font-size: 19px;
+      span {
+        font-weight: 700;
+        font-size: 18px;
+      }
     }
   }
   hr {
@@ -73,6 +74,9 @@ nav.home{
     background: $element-color-sec;
     margin-top: 20px;
   }
+}
+nav.home > div:nth-child(4){
+  margin-bottom:170px;
 }
 
 hr {
