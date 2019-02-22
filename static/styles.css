@@ -4,7 +4,7 @@ body {
   width: 100%; }
 
 h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 15px;
   letter-spacing: 2px;
@@ -85,7 +85,9 @@ div.button a {
     font-size: 16px;
     padding: 5px 30px;
     color: white;
-    background-color: #a5bd4d; }
+    background-color: #a5bd4d;
+    box-shadow: none;
+    text-shadow: none; }
     div.button a.secondary:hover {
       color: white;
       background-color: #FF8A8A; }
@@ -118,15 +120,16 @@ footer {
   background-position: top;
   background-color: #2e7344;
   margin-top: 50px;
-  padding: 15px 0 0 0; }
+  padding: 15px 0 0 0;
+  background-image: url("img/leaves3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
   footer p {
     font-size: 20px;
     color: white; }
     footer p a {
       color: white;
       padding-bottom: 5px; }
-      footer p a:hover {
-        color: black; }
   footer p, footer a {
     font-family: "Lato", sans-serif;
     text-align: center;
@@ -518,36 +521,49 @@ span.green {
   color: #608a42;
   font-family: "Lato", sans-serif; }
 
-.portfolio {
-  background-color: #bed590;
+.powrot {
+  background-color: rgba(0, 0, 0, 0.4);
   margin-top: 0;
+  margin-bottom: 150px;
   padding: 28px;
   width: auto;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.25px;
   text-transform: uppercase;
-  font-size: 18px; }
-  .portfolio a {
+  font-size: 18px;
+  text-align: left; }
+  .powrot a {
     text-decoration: none;
     margin: 16px;
-    color: #608a42; }
-    .portfolio a:hover {
+    color: white;
+    letter-spacing: 2px; }
+    .powrot a:hover {
       color: white; }
 
 h4.proj-header {
-  margin: 50px 10px -5px 10px;
+  margin: 50px 10px -10px 10px;
   color: #444;
   font-size: 28px; }
 
 .project-info {
-  background-color: #f2f3f2;
-  background-image: url("icons/green2.png"), url("icons/green2-left.png");
   background-repeat: no-repeat;
   background-position: right bottom, left bottom;
-  background-size: 150px, 150px; }
-  .project-info #project {
-    text-align: center;
-    padding-bottom: 60px; }
+  background-size: 150px, 150px;
+  text-align: center;
+  padding: 0 0 130px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#lapka {
+  background-image: url("img/cats.jpg"); }
+
+#chess {
+  background-image: url("img/chess.jpg"); }
+
+#sdd {
+  background-image: url("img/books.jpg");
+  background-position: top; }
 
 .medium.section {
   padding: 0 10px;
@@ -562,20 +578,12 @@ img.diagram {
     width: 70%;
     text-align: center; }
 
-@media only screen and (min-width: 1500px) {
-  .articles {
-    margin: 0 450px; } }
-@media only screen and (min-width: 1300px) and (max-width: 1500px) {
-  .articles {
-    margin: 0 300px; } }
-@media only screen and (min-width: 1100px) and (max-width: 1300px) {
-  .articles {
-    margin: 0 250px; } }
-@media only screen and (min-width: 900px) and (max-width: 1100px) {
-  .articles {
-    margin: 0 200px; } }
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-  .articles {
-    margin: 0 100px; } }
+.articles {
+  display: box;
+  margin: 0 auto; }
+
+section.chapter {
+  display: block;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */

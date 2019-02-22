@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: $p-font-wight-regular;
   margin-bottom: 15px;
   letter-spacing: 2px;
@@ -108,6 +108,8 @@ div.button {
       padding: 5px 30px;
       color: white;
       background-color: rgb(165, 189, 77);
+      box-shadow: none;
+      text-shadow: none;
 
       &:hover {
         color: white;
@@ -154,6 +156,9 @@ footer {
   background-color: #2e7344;
   margin-top: 50px;
   padding: 15px 0 0 0;
+  background-image: url("img/leaves3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
   p {
     font-size: 20px;
     color: white;
@@ -161,7 +166,6 @@ footer {
       color: white;
       padding-bottom: 5px;
       &:hover{
-        color: black;
       }
     }
   }

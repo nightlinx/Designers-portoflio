@@ -14,20 +14,22 @@ span.green {
   font-family: $h-font-family;
 }
 
-.portfolio {
-  background-color: $element-color-sec;
+.powrot {
+  background-color: rgba(0,0,0,0.4);
   margin-top: 0;
+  margin-bottom: 150px;
   padding: 28px;
   width: auto;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.25px;
   text-transform: uppercase;
   font-size: $nav-font-size;
+  text-align: left;
   a {
     text-decoration: none;
     margin: 16px;
-    color: $element-color-primary;
-
+    color: white;
+    letter-spacing:2px;
     &:hover {
       color: white;
     }
@@ -36,22 +38,33 @@ span.green {
 }
 
 h4.proj-header{
-  margin: 50px 10px -5px 10px;
+  margin: 50px 10px -10px 10px;
   color: $p-text-color;
   font-size: 28px;
 }
 
 .project-info {
-  background-color: $about-color-background;
-  background-image: url("icons/green2.png"),  url("icons/green2-left.png");
+  //background-color: $about-color-background;
+  //background-image: url("icons/green2.png"),  url("icons/green2-left.png");
   background-repeat: no-repeat;
   background-position: right bottom, left bottom;
   background-size: 150px, 150px;
+  text-align: center;
+  padding: 0 0 130px 0;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
 
-  #project {
-    text-align: center;
-    padding-bottom: 60px;
-  }
+#lapka {
+  background-image: url("img/cats.jpg");
+}
+#chess {
+  background-image: url("img/chess.jpg");
+}
+#sdd {
+  background-image: url("img/books.jpg");
+  background-position: top;
 }
 
 .medium {
@@ -73,34 +86,43 @@ img.diagram {
   }
 }
 
-
-@media only screen and (min-width: 1500px){
-  .articles {
-    margin: 0 450px;
-  }
+.articles {
+  display: box;
+  margin: 0 auto;
 }
 
-
-@media only screen and (min-width: 1300px) and (max-width: 1500px){
-  .articles {
-    margin: 0 300px;
-  }
+section.chapter {
+  display:block;
+  margin:0 auto;
 }
-
-@media only screen and (min-width: 1100px) and (max-width: 1300px){
-  .articles {
-    margin: 0 250px;
-  }
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1100px){
-  .articles {
-    margin: 0 200px;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 900px){
-  .articles {
-    margin: 0 100px;
-  }
-}
+//
+// @media only screen and (min-width: 1800px){
+//   .articles {
+//     margin: 0 550px;
+//   }
+// }
+//
+//
+// @media only screen and (min-width: 1300px) and (max-width: 1800px){
+//   .articles {
+//     margin: 0 300px;
+//   }
+// }
+//
+// @media only screen and (min-width: 1100px) and (max-width: 1300px){
+//   .articles {
+//     margin: 0 250px;
+//   }
+// }
+//
+// @media only screen and (min-width: 900px) and (max-width: 1100px){
+//   .articles {
+//     margin: 0 200px;
+//   }
+// }
+//
+// @media only screen and (min-width: 600px) and (max-width: 900px){
+//   .articles {
+//     margin: 0 100px;
+//   }
+// }
