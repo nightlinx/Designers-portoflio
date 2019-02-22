@@ -25,7 +25,7 @@ h2 {
     font-weight: 700; }
 
 h3 {
-  color: #608a42;
+  color: #559d86;
   font-family: "Lato", sans-serif;
   letter-spacing: 4px;
   font-size: 24px;
@@ -60,7 +60,7 @@ section.chapter {
   color: #FF8A8A; }
 
 a {
-  color: #608a42; }
+  color: #559d86; }
 
 div.button a {
   text-decoration: none;
@@ -85,12 +85,12 @@ div.button a {
     font-size: 16px;
     padding: 5px 30px;
     color: white;
-    background-color: #a5bd4d;
+    background-color: #559d86;
     box-shadow: none;
     text-shadow: none; }
     div.button a.secondary:hover {
       color: white;
-      background-color: #FF8A8A; }
+      background-color: #6eb356; }
 
 .pink {
   color: #E27373; }
@@ -119,7 +119,6 @@ footer {
   background-size: cover;
   background-position: top;
   background-color: #2e7344;
-  margin-top: 50px;
   padding: 15px 0 0 0;
   background-image: url("img/leaves3.jpg");
   background-repeat: no-repeat;
@@ -223,7 +222,7 @@ footer {
   font-weight: bold;
   transition: 0.3s; }
   .close:hover, .close:focus {
-    color: #608a42;
+    color: #559d86;
     text-decoration: none;
     cursor: pointer; }
 
@@ -518,7 +517,7 @@ span.red {
   font-family: "Lato", sans-serif; }
 
 span.green {
-  color: #608a42;
+  color: #559d86;
   font-family: "Lato", sans-serif; }
 
 .powrot {
@@ -579,11 +578,21 @@ img.diagram {
     text-align: center; }
 
 .articles {
-  display: box;
-  margin: 0 auto; }
+  background-color: #f7f7f7;
+  padding: 50px; }
 
-section.chapter {
-  display: block;
-  margin: 0 auto; }
+.sections {
+  display: table;
+  margin: auto;
+  background-color: white;
+  padding: 20px 100px 50px 100px;
+  box-shadow: 0 0 4px 0 #d9d9d9, 0 0 4px 0 #d9d9d9; }
+
+@media only screen and (max-width: 800px) {
+  .sections {
+    padding: 10px 50px 10px 50px; }
+
+  .articles {
+    padding: 10px; } }
 
 /*# sourceMappingURL=styles.css.map */

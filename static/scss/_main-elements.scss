@@ -107,13 +107,13 @@ div.button {
       font-size: $p-font-size-medium;
       padding: 5px 30px;
       color: white;
-      background-color: rgb(165, 189, 77);
+      background-color: #559d86;
       box-shadow: none;
       text-shadow: none;
 
       &:hover {
         color: white;
-        background-color: $element-color-other;
+        background-color: #6eb356;
       }
     }
   }
@@ -154,7 +154,6 @@ footer {
   background-size:cover;
   background-position: top;
   background-color: #2e7344;
-  margin-top: 50px;
   padding: 15px 0 0 0;
   background-image: url("img/leaves3.jpg");
   background-repeat: no-repeat;

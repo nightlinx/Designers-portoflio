@@ -87,13 +87,25 @@ img.diagram {
 }
 
 .articles {
-  display: box;
-  margin: 0 auto;
+  background-color: hsl(0, 0%, 97%);
+  padding: 50px;
 }
 
-section.chapter {
-  display:block;
-  margin:0 auto;
+.sections {
+  display:table;
+  margin:auto;
+  background-color: white;
+  padding: 20px 100px 50px 100px;
+  box-shadow: 0 0 4px 0 #d9d9d9, 0 0 4px 0 #d9d9d9;
+}
+
+@media only screen and (max-width: 800px){
+  .sections {
+    padding: 10px 50px 10px 50px;
+  }
+  .articles {
+    padding:10px;
+  }
 }
 //
 // @media only screen and (min-width: 1800px){

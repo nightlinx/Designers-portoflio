@@ -1,10 +1,11 @@
 <!DOCTYPE  html>
 <html lang='pl'>
+
 <head>
 	<meta charset='utf-8'>
 	<title>Portfolio - Anna</title>
-	<link href='static/styles.css' rel='stylesheet'/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href='static/styles.css' rel='stylesheet' />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300,400,400i,500,600|Open+Sans:300,300i,400,600" rel="stylesheet">
@@ -13,17 +14,24 @@
 		_paq.push(['trackPageView']);
 		_paq.push(['enableLinkTracking']);
 		(function() {
-			var u="//stats11.mydevil.net/";
-			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			var u = "//stats11.mydevil.net/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
 			_paq.push(['setSiteId', '301']);
-			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.async = true;
+			g.defer = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
 		})();
 	</script>
 </head>
+
 <body>
-<!--<img src="https://stats11.mydevil.net/piwik.php?idsite=301&amp;rec=1&amp;action_name=portfolio" style="border:0" alt="" />-->
-<div id="content">
+	<!--<img src="https://stats11.mydevil.net/piwik.php?idsite=301&amp;rec=1&amp;action_name=portfolio" style="border:0" alt="" />-->
+	<div id="content">
 		<div class="project-info" id="chess">
 			<nav class="powrot lapka">
 				<a href="index.html"><span class="lsaquo">&lsaquo;</span> Powrót do portfolio</a>
@@ -35,75 +43,78 @@
 		</div>
 
 		<div class="articles">
-		<section class="chapter">
-			<h4 class="proj-header">Pomysł na aplikację</h3>
-				<ol class="medium">
-					<li>Aplikacja skierowana do osób chcących nauczyć się gry w szachy.</li>
-					<li>Serwis, który pozwoli na rozgrywkę między dwoma graczami online.</li>
-					<li>System podpowiadający ruchy i udzielający wskazówek podczas rozgrywki.</li>
-				</ol>
-		</section>
+			<div class="sections">
+				<section class="chapter">
+					<h4 class="proj-header">Pomysł na aplikację</h3>
+						<ol class="medium">
+							<li>Aplikacja skierowana do osób chcących nauczyć się gry w szachy.</li>
+							<li>Serwis, który pozwoli na rozgrywkę między dwoma graczami online.</li>
+							<li>System podpowiadający ruchy i udzielający wskazówek podczas rozgrywki.</li>
+						</ol>
+				</section>
 
-		<section class="chapter">
-			<h4 class="proj-header">Specyfikacja wymagań</h4>
-			<ol class="medium">
-				<li>Wybór koloru pionków przez osobę rozpoczynającą grę.</li>
-				<li>Wyświetlanie opisu ruchu zaznaczonego pionka.</li>
-				<li>Przedstawia wszystkie możliwe ruchy wybranego pionka.</li>
-				<li>Możliwość prowadzenia i zakończenia rozgrywki.</li>
-				<li>Wybrór poziomu trudności.</li>
-				<li>Dynamiczne liczenie punktacji.</li>
-				<li>Rejestracja i logowanie użytkowników.</li>
-			</ol>
-		</section>
+				<section class="chapter">
+					<h4 class="proj-header">Specyfikacja wymagań</h4>
+					<ol class="medium">
+						<li>Wybór koloru pionków przez osobę rozpoczynającą grę.</li>
+						<li>Wyświetlanie opisu ruchu zaznaczonego pionka.</li>
+						<li>Przedstawia wszystkie możliwe ruchy wybranego pionka.</li>
+						<li>Możliwość prowadzenia i zakończenia rozgrywki.</li>
+						<li>Wybrór poziomu trudności.</li>
+						<li>Dynamiczne liczenie punktacji.</li>
+						<li>Rejestracja i logowanie użytkowników.</li>
+					</ol>
+				</section>
 
-		<section class="chapter">
-			<h4 class="proj-header">Historyjki użytkowników - wymagania funkcjonalne</h4>
-				<p class="medium section">Posiadając wymagania użytkowników mogłam zdefiniować je w formie historyjek oraz diagramu przypadków użycia.</p>
-				<ol class="medium">
-					<li>Jako gracz chcę wybrać jakim kolorem będę grać, ponieważ może to mieć wpływ na przebieg rozgrywki.</li>
-					<li>Jako gracz chcę poprowadzić rozgrywkę z drugim graczem, abyśmy oboje mogli się uczyć gry w szachy.</li>
-					<li>Jako gracz chcę móc wybrać figurę, którą będę się poruszać, aby móc wybrać gdzie się ruszyć.</li>
-					<li>Jako gracz chcę móc wybrać figurę i przeczytać jej opis, aby wiedzieć jak się porusza, ile jest warta punktów oraz inne dodatkowe informacje.</li>
-					<li>Jako gracz chcę dostać podpowiedź o możliwych ruchach wybranej figury, aby wiedzieć gdzie można ją postawić.</li>
-					<li>Jako gracz chcę ruszyć się daną figurą (zmienić jej pozycję).</li>
-					<li>Jako gracz chcę móc zbić figurę przeciwnika, aby zdobywać punkty.</li>
-					<li>Jako gracz chcę znać punktację rozgrywki.</li>
-					<li>Jako gracz chcę wybrąc poziom trudności, aby móc nauczyć się więcej.</li>
-					<li>Jako użytkownik chcę móc zalogować się do aplikacji, aby mieć swoje konto i móc je spersonalizować.</li>
-				</ol>
-				<img class="diagram" src="static/img/masterchess/userCase.jpg"></img>
-				<p></p>
-		</section>
+				<section class="chapter">
+					<h4 class="proj-header">Historyjki użytkowników - wymagania funkcjonalne</h4>
+					<p class="medium section">Posiadając wymagania użytkowników mogłam zdefiniować je w formie historyjek oraz diagramu przypadków użycia.</p>
+					<ol class="medium">
+						<li>Jako gracz chcę wybrać jakim kolorem będę grać, ponieważ może to mieć wpływ na przebieg rozgrywki.</li>
+						<li>Jako gracz chcę poprowadzić rozgrywkę z drugim graczem, abyśmy oboje mogli się uczyć gry w szachy.</li>
+						<li>Jako gracz chcę móc wybrać figurę, którą będę się poruszać, aby móc wybrać gdzie się ruszyć.</li>
+						<li>Jako gracz chcę móc wybrać figurę i przeczytać jej opis, aby wiedzieć jak się porusza, ile jest warta punktów oraz inne dodatkowe informacje.</li>
+						<li>Jako gracz chcę dostać podpowiedź o możliwych ruchach wybranej figury, aby wiedzieć gdzie można ją postawić.</li>
+						<li>Jako gracz chcę ruszyć się daną figurą (zmienić jej pozycję).</li>
+						<li>Jako gracz chcę móc zbić figurę przeciwnika, aby zdobywać punkty.</li>
+						<li>Jako gracz chcę znać punktację rozgrywki.</li>
+						<li>Jako gracz chcę wybrąc poziom trudności, aby móc nauczyć się więcej.</li>
+						<li>Jako użytkownik chcę móc zalogować się do aplikacji, aby mieć swoje konto i móc je spersonalizować.</li>
+					</ol>
+					<img class="diagram" src="static/img/masterchess/userCase.jpg"></img>
+					<p></p>
+				</section>
 
-		<section class="chapter">
-			<h4 class="proj-header">Realizowany proces</h4>
-				<p class="medium section">Wraz z programistami utworzyliśmy diagram aktywności, aby zrozumieć proces korzystania z aplikacji przez użytkownika.</p>
-				<img class="diagram" src="static/img/masterchess/active.jpg"></img>
-				<p></p>
-		</section>
+				<section class="chapter">
+					<h4 class="proj-header">Realizowany proces</h4>
+					<p class="medium section">Wraz z programistami utworzyliśmy diagram aktywności, aby zrozumieć proces korzystania z aplikacji przez użytkownika.</p>
+					<img class="diagram" src="static/img/masterchess/active.jpg"></img>
+					<p></p>
+				</section>
 
-		<section class="chapter">
-			<h4 class="proj-header">Prototyp interfejsu</h4>
-			<p class="medium section">Biorąc pod uwagę wszystkie potrzeby użytkowników zbudowałam prototyp.</p>
-			<img class="diagram" src="static/img/masterchess/figma3.jpg"></img>
-			<img class="diagram" src="static/img/masterchess/figma7.jpg"></img>
-			<img class="diagram" src="static/img/masterchess/figma2.jpg"></img>
-			<img class="diagram" src="static/img/masterchess/figma4.jpg"></img>
-			<img class="diagram" src="static/img/masterchess/figma6.jpg"></img>
-			<img class="diagram" src="static/img/masterchess/figma5.jpg"></img>
-			<img class="diagram" src="static/img/masterchess/figma8.jpg"></img>
-			<img class="diagram" src="static/img/masterchess/figma9.jpg"></img>
-				<p></p>
-		</section>
-	</div>
-
-	<footer class="footer" id="contact">
-		<p>Podobają Ci się moje prace? <br> Napisz do mnie maila, albo znajdź mnie na <a href="https://www.linkedin.com/in/janik-anna/" target="_blank">LinkedIn</a>!</p>
-		<div>
-			<p id="sign">&copy 2018 Anna Janik | janik.anna@interia.com</p>
+				<section class="chapter">
+					<h4 class="proj-header">Prototyp interfejsu</h4>
+					<p class="medium section">Biorąc pod uwagę wszystkie potrzeby użytkowników zbudowałam prototyp.</p>
+					<img class="diagram" src="static/img/masterchess/figma3.jpg"></img>
+					<img class="diagram" src="static/img/masterchess/figma7.jpg"></img>
+					<img class="diagram" src="static/img/masterchess/figma2.jpg"></img>
+					<img class="diagram" src="static/img/masterchess/figma4.jpg"></img>
+					<img class="diagram" src="static/img/masterchess/figma6.jpg"></img>
+					<img class="diagram" src="static/img/masterchess/figma5.jpg"></img>
+					<img class="diagram" src="static/img/masterchess/figma8.jpg"></img>
+					<img class="diagram" src="static/img/masterchess/figma9.jpg"></img>
+					<p></p>
+				</section>
+			</div>
 		</div>
-	</footer>
-</div>
+
+		<footer class="footer" id="contact">
+			<p>Podobają Ci się moje prace?<br>Napisz do mnie maila, albo znajdź mnie na <a href="https://www.linkedin.com/in/janik-anna/" target="_blank">LinkedIn</a>!</p>
+			<div>
+				<p id="sign">&copy 2019 ANNA JANIK | janik.anna@interia.com</p>
+			</div>
+		</footer>
+	</div>
 </body>
+
 </html>
