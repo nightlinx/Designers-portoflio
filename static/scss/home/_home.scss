@@ -56,6 +56,11 @@ nav.home{
         color: #559d86;
       }
     }
+    @media only screen and (max-device-width: 1100px){
+      a {
+        margin: 30px 15px;
+      }
+    }
     a#me{
       text-transform: uppercase;
       letter-spacing: 3px;
@@ -75,6 +80,8 @@ nav.home{
     margin-top: 20px;
   }
 }
+
+
 nav.home > div:nth-child(4){
   margin-bottom:170px;
 }

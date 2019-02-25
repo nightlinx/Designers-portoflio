@@ -1,7 +1,7 @@
 @import "../_variables.scss";
 
 .ux{
-  margin-bottom:50px;
+  margin-bottom:80px;
 }
 
 @media only screen and (max-device-width: 800px){
@@ -32,20 +32,21 @@
 
 @media only screen and (max-device-width: 550px){
   p.medium, ol.medium, ul.medium {
-    font-size: 210%;
+    font-size: 220%;
+    line-height: 150%;
   }
   .ux1, .ux2, .ux3, .ux4, .ux5, .ux6 {
-    height: 200px;
+    height: 220px;
     margin: 80px 0;
   }
 }
 
 @media only screen and (min-device-width: 550px) and (max-device-width: 800px){
-  p.medium {
+  p.medium, ol.medium, ul.medium {
     font-size: 160%;
   }
   .ux1, .ux2, .ux3, .ux4, .ux5, .ux6 {
-    height: 200px;
+    height: 190px;
     margin: 40px 0;
   }
 }
