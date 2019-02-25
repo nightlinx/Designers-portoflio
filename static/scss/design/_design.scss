@@ -1,6 +1,6 @@
 @import "../_variables.scss";
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-device-width: 900px){
 
   .grid.design{
     text-align: center;
@@ -8,7 +8,7 @@
 
   .design {
     display: grid;
-    grid-template-columns: auto 400px auto;
+    grid-template-columns: auto 80% auto;
     grid-template-areas:
        "... design1 ..."
        "... design2 ..."
@@ -17,7 +17,7 @@
 
   .implem {
     display: grid;
-    grid-template-columns: auto 400px auto;
+    grid-template-columns: auto 80% auto;
     grid-template-areas:
     "... implem1 ..."
     "... implem2 ..."
@@ -25,11 +25,11 @@
   }
 
   .design1, .design2, .design3, .image, .implem1, .implem2, .implem3, .descr1, .descr2, .descr3 {
-    width: 400px;
+    width: 100%;
   }
 
   .implem1, .implem2, .implem3 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .image {
@@ -37,12 +37,12 @@
     cursor: pointer;
   }
   .design1, .design2, .design3 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
 }
 
-@media only screen and (min-width: 950px){
+@media only screen and (min-device-width: 900px){
   .design{
     display: grid;
     grid-template-columns: auto 290px 290px 290px auto;

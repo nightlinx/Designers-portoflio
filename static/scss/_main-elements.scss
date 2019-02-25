@@ -152,6 +152,7 @@ p.large {
   font-size: $p-font-size-large;
 }
 
+
 footer {
   background-repeat: no-repeat;
   background-size:cover;
@@ -162,7 +163,7 @@ footer {
   background-repeat: no-repeat;
   background-size:cover;
   p {
-    font-size: 20px;
+    font-size: $p-font-size-medium;
     color: white;
     a {
       color: white;
@@ -191,9 +192,18 @@ footer {
 }
 
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-device-with: 1200px){
   p.medium, ol.medium, ul.medium {
     font-size: $p-font-size-large;
+  }
+  h4 {
+    font-size: $h4-font-size-large;
+  }
+}
+
+@media only screen and (max-device-with: 600px){
+  p.medium, ol.medium, ul.medium {
+    font-size: 25px;
   }
   h4 {
     font-size: $h4-font-size-large;
