@@ -149,18 +149,14 @@ footer {
       font-size: 18px;
       font-weight: 400; }
 
-@media only screen and (min-device-with: 1200px) {
-  p.medium, ol.medium, ul.medium {
-    font-size: 18px; }
+.medium.project-name {
+  font-size: 150%;
+  font-weight: bold;
+  margin: 0; }
 
-  h4 {
-    font-size: 26px; } }
-@media only screen and (max-device-with: 600px) {
-  p.medium, ol.medium, ul.medium {
-    font-size: 25px; }
-
-  h4 {
-    font-size: 26px; } }
+@media only screen and (max-device-width: 800px) {
+  .medium.project-name {
+    font-size: 250%; } }
 .grid {
   text-align: center;
   background-color: white;
@@ -403,12 +399,12 @@ hr {
 @media only screen and (min-device-width: 900px) {
   .design {
     display: grid;
-    grid-template-columns: auto 290px 290px 290px auto;
+    grid-template-columns: auto 300px 300px 300px auto;
     grid-template-areas: "... design1 design2 design3 ..."; }
 
   .implem {
     display: grid;
-    grid-template-columns: auto 290px 290px 290px auto;
+    grid-template-columns: auto 300px 300px 300px auto;
     margin-bottom: 50px;
     grid-template-areas: "... implem1 implem2 implem3 ..."; }
 
@@ -425,7 +421,7 @@ hr {
     padding-bottom: 5px; }
 
   .descr1, .descr2, .descr3 {
-    width: 260px; }
+    width: 280px; }
 
   .implem1, .implem2, .implem3 {
     width: 280px;
@@ -493,7 +489,10 @@ hr {
 
   .ux1, .ux2, .ux3, .ux4, .ux5, .ux6 {
     height: 220px;
-    margin: 80px 0; } }
+    margin: 80px 0; }
+
+  h5 {
+    font-size: 150%; } }
 @media only screen and (min-device-width: 550px) and (max-device-width: 800px) {
   p.medium, ol.medium, ul.medium {
     font-size: 160%; }

@@ -44,14 +44,14 @@
 @media only screen and (min-device-width: 900px){
   .design{
     display: grid;
-    grid-template-columns: auto 290px 290px 290px auto;
+    grid-template-columns: auto 300px 300px 300px auto;
     grid-template-areas:
        "... design1 design2 design3 ..."
   }
 
   .implem{
     display: grid;
-    grid-template-columns: auto 290px 290px 290px auto;
+    grid-template-columns: auto 300px 300px 300px auto;
     margin-bottom: 50px;
     grid-template-areas:
        "... implem1 implem2 implem3 ..."
@@ -72,7 +72,7 @@
   }
 
   .descr1, .descr2, .descr3 {
-    width: 260px;
+    width: 280px;
   }
 
   .implem1, .implem2, .implem3{

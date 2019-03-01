@@ -199,6 +199,17 @@ footer {
   }
 }
 
+.medium.project-name {
+  font-size: 150%;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media only screen and (max-device-width: 800px){
+  .medium.project-name {
+    font-size: 250%;
+  }
+}
 
 .grid{
   text-align: center;
