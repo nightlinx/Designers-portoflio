@@ -200,25 +200,6 @@ footer {
 }
 
 
-@media only screen and (min-device-with: 1200px){
-  p.medium, ol.medium, ul.medium {
-    font-size: $p-font-size-large;
-  }
-  h4 {
-    font-size: $h4-font-size-large;
-  }
-}
-
-@media only screen and (max-device-with: 600px){
-  p.medium, ol.medium, ul.medium {
-    font-size: 25px;
-  }
-  h4 {
-    font-size: $h4-font-size-large;
-  }
-}
-
-
 .grid{
   text-align: center;
   background-color:  white;
